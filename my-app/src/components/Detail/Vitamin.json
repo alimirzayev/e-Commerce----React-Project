@@ -1,0 +1,44 @@
+[
+    {
+        "vitaminame": "Vitamin A equiv.",
+        "quantity" : "735 μg",
+        "dv" : "104 %",
+        "id" : 1
+    },
+    {
+        "vitaminame": "Thiamine (B1)",
+        "quantity" : "735 μg",
+        "dv" : "104 %",
+        "id" : 2    
+    },
+    {
+        "vitaminame": "Niacin (B3)",
+        "quantity" : "735 μg",
+        "dv" : "104 %",
+        "id" : 3
+    },
+    {
+        "vitaminame": "Folate (Bg)",
+        "quantity" : "735 μg",
+        "dv" : "104 %",
+        "id" : 4
+    },
+    {
+        "vitaminame": "Vitamin C",
+        "quantity" : "735 μg",
+        "dv" : "104 %",
+        "id" : 5
+    },
+    {
+        "vitaminame": "Vitamin E",
+        "quantity" : "735 μg",
+        "dv" : "104 %",
+        "id" : 6
+    },
+    {
+        "vitaminame": "Vitamin K",
+        "quantity" : "735 μg",
+        "dv" : "104 %",
+        "id" : 7
+    }
+]

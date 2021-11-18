@@ -1,0 +1,30 @@
+[
+    {
+        "img" : "https://preview.colorlib.com/theme/vegefoods/images/xproduct-8.jpg.pagespeed.ic.eAtHbtNqMI.webp",
+        "title" : "Fruit Juice",
+        "desc" : "Space for a small product description",
+        "price" : 3.50,
+        "id" : 1,
+        "img2": "",
+        "img3": ""
+    },
+    {
+        "img" : "https://preview.colorlib.com/theme/vegefoods/images/xproduct-1.jpg.pagespeed.ic.dWctTko08F.webp",
+        "title" : "Bell Pepper",
+        "desc" : "Space for a small product description",
+        "price" : 1.00,
+        "id" : 2,
+        "img2": "",
+        "img3": ""
+    },
+    {
+        "img" : "https://preview.colorlib.com/theme/vegefoods/images/xproduct-2.jpg.pagespeed.ic.2q3x49cb1q.webp",
+        "title" : "Strawberry",
+        "desc" : "Space for a small product description",
+        "price" : 3.00,
+        "id" : 3,
+        "img2": "",
+        "img3": ""
+    }
+
+]

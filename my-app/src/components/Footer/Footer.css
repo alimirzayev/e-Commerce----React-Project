@@ -1,0 +1,19 @@
+footer {
+  width: 100%;
+  padding: 0px 50px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+footer h5 {
+  font-family: "Bold";
+  font-size: 18px;
+  margin-bottom: 16px;
+}
+
+footer ul li {
+  padding-bottom: 16px;
+  font-family: "Medium";
+  color: #6a983c;
+}

@@ -1,0 +1,23 @@
+.headline {
+  width: 100%;
+  margin-top: 69px;
+  margin-bottom: 8%;
+}
+
+.headlineCards {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+}
+
+#saleoff {
+  background: #f4f8ec;
+  border-radius: 12px;
+  width: 54px;
+  height: 18px;
+  color: #6a983c;
+  font-family: "Bold";
+  font-size: 0.9em;
+  padding: 0px 4px;
+  position: absolute;
+}

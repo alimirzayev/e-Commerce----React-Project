@@ -1,0 +1,271 @@
+.detailMain {
+  margin: 32.5px 42px;
+  min-height: 200vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailMainLeft {
+  width: 50%;
+}
+
+.detailMainRight {
+  width: 50%;
+}
+
+.productImage {
+  width: 80%;
+  height: 436px;
+}
+
+.productImage img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.detailDesc h1 {
+  font-family: "Bold";
+}
+
+.detailReview {
+  display: flex;
+  margin-top: 8px;
+}
+
+.detailReview p {
+  color: #a9a9a9;
+  margin-left: 7px;
+  margin-top: 1px;
+}
+
+.detailText {
+  margin-top: 24px;
+  font-family: "Semi-Bold";
+}
+
+.detailSpec {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 42px;
+}
+
+.detailSpecLeft,
+.detailSpecRight {
+  width: 35%;
+  height: 130px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "Medium";
+}
+
+.detailSpecLeft div,
+.detailSpecRight div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailSpecLeft div p:nth-child(1),
+.detailSpecRight div p:nth-child(1) {
+  color: #a9a9a9;
+}
+
+.detailBuy {
+  width: 534px;
+  height: 89px;
+  border: 2.5px solid #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 12px;
+  margin: 40px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailBuyLeft,
+.detailBuyRight {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0px 16px;
+}
+
+.detailBuyLeft p {
+  font-family: "Bold";
+  color: #6a983c;
+  font-size: 22px;
+}
+
+.detailBuyRight button {
+  color: white;
+  font-family: "Bold";
+  width: 140px;
+  height: 47px;
+  background: #6a983c;
+  border: 2px solid #46760a;
+  box-sizing: border-box;
+  border-radius: 12px;
+  font-size: 1.01em;
+  cursor: pointer;
+}
+
+.detailWish {
+  width: 40%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.detailWish div {
+  display: flex;
+  cursor: pointer;
+  font-family: "Bold";
+}
+
+.detailWish p {
+  margin-left: 4px;
+}
+
+.detailDescBottom {
+  width: 100%;
+  margin-top: 64px;
+  font-family: "Bold";
+  padding-right: 30px;
+}
+
+.descBottomHeading {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .descBottomHeading :nth-child(1) {
+  border-bottom: 2px solid #6a983c;
+} */
+
+.descBottomHeading h3 {
+  cursor: pointer;
+}
+
+.descBottomHeading h3 span {
+  width: 29px;
+  height: 18px;
+  background: #f4f8ec;
+  color: #6a983c;
+}
+
+.Description {
+  width: 100%;
+  margin-top: 48px;
+}
+
+.origins h3,
+.howCook h3,
+.fullVitamins h3 {
+  font-family: "Bold";
+}
+
+.origins p,
+.howCook p {
+  font-family: "Medium";
+  margin-bottom: 38px;
+}
+
+.wp-table tr:nth-child(odd) {
+  background: #fdfdfd;
+}
+
+.wp-table tr:nth-child(even) {
+  background: #ffffff;
+}
+
+.wp-table tr {
+  border: none;
+}
+
+.wp-table tr:first-child {
+  background-color: white;
+  border-bottom: 1px solid #f5f5f5;
+}
+
+.wp-table th:first-child,
+.wp-table td:first-child {
+  padding-left: 16px;
+}
+
+.wp-table td,
+.wp-table th {
+  padding: 8px 8px;
+  display: table-cell;
+  text-align: left;
+  vertical-align: top;
+}
+
+.wp-table td {
+  font-family: "Regular";
+  font-size: 1.1em;
+}
+
+.wp-table th {
+  font-family: "Bold";
+  font-size: 1.09em;
+}
+
+.wp-table {
+  font-size: 13px !important;
+  border-collapse: collapse;
+  border-spacing: 0;
+  width: 100%;
+  display: table;
+  margin-top: 25px;
+}
+
+.Review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 38px;
+}
+
+.userReview {
+  width: 100%;
+  border: 1px solid #d1d1d1;
+  box-sizing: border-box;
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+.headingReview {
+  display: flex;
+}
+
+.headingReview div {
+  margin-left: 12px;
+}
+
+.headingReview div p {
+  color: #d1d1d1;
+  font-family: "Medium";
+  font-size: 14px;
+}
+
+.reviewContent {
+  margin-top: 27px;
+}
+
+.reviewContent p {
+  font-family: "Medium";
+}
+
+.itemRating {
+  color: #a9a9a9 !important;
+  font-family: "Medium";
+  padding-left: 10px;
+  font-size: 1.05rem;
+}
+
+.MuiSvgIcon-root path {
+  color: #fdbc15;
+}
