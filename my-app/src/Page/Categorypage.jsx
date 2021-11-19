@@ -1,4 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react'
+import { MainContext, useContext } from '../Context';
+
 import CategoryMain from '../components/Category/CategoryMain'
 import '../components/Category/Category.css'
 import JSONDATA from '../components/Main/Search.json'
@@ -161,15 +163,17 @@ function Categorypage() {
             </div>
 
 
-            <CategoryMain
-                filteredRating5={filteredRating5}
-                filteredRating4={filteredRating4}
-                filteredRating3={filteredRating3}
-                filteredRating2={filteredRating2}
-                filteredRating1={filteredRating1}
+            <MainContext.Provider>
+                <CategoryMain
+                    filteredRating5={filteredRating5}
+                    filteredRating4={filteredRating4}
+                    filteredRating3={filteredRating3}
+                    filteredRating2={filteredRating2}
+                    filteredRating1={filteredRating1}
 
-                isRightOpen={isRightOpen}
-                filteredJson={newJson} />
+                    isRightOpen={isRightOpen}
+                    filteredJson={newJson} />
+            </MainContext.Provider>
         </div>
     )
 }

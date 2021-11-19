@@ -1,6 +1,8 @@
 import './App.css';
 import React, { useState } from 'react'
 
+import { MainContext, useContext } from './Context';
+
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import { CartProvider, useCart } from "react-use-cart";
 
@@ -13,34 +15,45 @@ import Categorypage from './Page/Categorypage';
 
 function App() {
 
+  const [methods, setMethods] = useState({
+
+  })
+
+  const data = {
+    ...methods
+  }
+
   return (
     <div className="App">
+      <MainContext.Provider >
 
-      <CartProvider>
-        <Header />
+        <CartProvider>
+          <Header />
 
-        <Switch>
+          <Switch>
 
-          <Route exact path="/">
-            <Home />
-          </Route>
+            <Route exact path="/">
+              <Home />
+            </Route>
 
-          <Route path="/checkout">
-            <Checkout />
-          </Route>
+            <Route path="/checkout">
+              <Checkout />
+            </Route>
 
-          <Route exact path="/products/:id">
-            <Detail />
-          </Route>
+            <Route exact path="/products/:id">
+              <Detail />
+            </Route>
 
-          <Route exact path="/category">
-            <Categorypage />
-          </Route>
+            <Route exact path="/category">
+              <Categorypage />
+            </Route>
 
-        </Switch>
+          </Switch>
 
-        <Footer />
-      </CartProvider>
+          <Footer />
+        </CartProvider>
+
+      </MainContext.Provider >
     </div>
   );
 }
