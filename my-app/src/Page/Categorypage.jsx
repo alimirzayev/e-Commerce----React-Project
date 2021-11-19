@@ -1,10 +1,9 @@
-import React, { useState } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import CategoryMain from '../components/Category/CategoryMain'
 import '../components/Category/Category.css'
 import JSONDATA from '../components/Main/Search.json'
 
 function Categorypage() {
-
     const [newJson, setNewJson] = useState(JSONDATA)
 
     const sortingTitle = () => {
@@ -69,6 +68,12 @@ function Categorypage() {
         setIsRightOpen(false)
     }
 
+    const selectedFilter = useRef("Selected Filter None")
+
+    const selectedFilterFunction = (event) => {
+        selectedFilter.current.textContent = event.target.value
+    }
+
 
     return (
         <div className="categoryPage">
@@ -103,7 +108,7 @@ function Categorypage() {
                     </div>
 
                     <div>
-                        <span>10</span>
+                        <span>{newJson.length}</span>
                         <p>Products</p>
                     </div>
 
@@ -114,37 +119,37 @@ function Categorypage() {
             <div className="filterContainer">
 
                 <div className="firstFilter">
-                    <label>
-                        <input onClick={sortingPrice} type="radio" name="price" id="" />
+                    <label onClick={selectedFilterFunction}>
+                        <input onClick={sortingPrice} value="Price: Low to High" type="radio" name="same" id="" />
                         Price: Low to High
                     </label>
-                    <label>
-                        <input onClick={sortingPriceDes} type="radio" name="price" id="" />
+                    <label onClick={selectedFilterFunction}>
+                        <input onClick={sortingPriceDes} value="Price: High to Low" type="radio" name="same" id="" />
                         Price: High to Low
                     </label>
                 </div>
 
                 <div className="firstFilter">
-                    <label>
-                        <input onClick={sortingTitle} type="radio" name="title" id="" />
+                    <label onClick={selectedFilterFunction}>
+                        <input onClick={sortingTitle} value={"Title: A to Z"} type="radio" name="same" id="" />
                         Title: A to Z
                     </label>
-                    <label>
-                        <input onClick={sortingTitleDes} type="radio" name="title" id="" />
+                    <label onClick={selectedFilterFunction}>
+                        <input onClick={sortingTitleDes} value={"Title: Z to A"} type="radio" name="same" id="" />
                         Title: Z to A
                     </label>
                 </div>
 
                 <div className="secondFilter thirdFilter">
-                    <label>
-                        <input onClick={sortingId} type="radio" name="new" id="" />
+                    <label onClick={selectedFilterFunction}>
+                        <input onClick={sortingId} value={"New Arrivals"} type="radio" name="same" id="" />
                         New Arrivals
                     </label>
                 </div>
 
                 <div className="secondFilter thirdFilter">
-                    <label>
-                        <input onClick={sortingId} type="radio" name="discount" id="" />
+                    <label onClick={selectedFilterFunction}>
+                        <input onClick={sortingId} value={"Discounted"} type="radio" name="same" id="" />
                         Discounted
                     </label>
                 </div>
@@ -152,9 +157,7 @@ function Categorypage() {
             </div>
 
             <div className="appliedFilters">
-                <p>Applied filtres:</p>
-                <span>Selected Filtre X</span>
-                <span>Selected Filtre X</span>
+                <span ref={selectedFilter}></span>
             </div>
 
 
@@ -164,6 +167,7 @@ function Categorypage() {
                 filteredRating3={filteredRating3}
                 filteredRating2={filteredRating2}
                 filteredRating1={filteredRating1}
+
                 isRightOpen={isRightOpen}
                 filteredJson={newJson} />
         </div>
