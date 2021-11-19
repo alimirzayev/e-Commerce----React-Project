@@ -52,7 +52,7 @@ function Categorypage() {
         setNewJson(jd9)
     }
 
-    const filteredRating2 = () => {
+    const filteredRating1 = () => {
         const jd10 = JSONDATA.filter((val) => val.rating === 1 || val.rating === 0.5);
         setNewJson(jd10)
     }
@@ -162,6 +162,8 @@ function Categorypage() {
                 filteredRating5={filteredRating5}
                 filteredRating4={filteredRating4}
                 filteredRating3={filteredRating3}
+                filteredRating2={filteredRating2}
+                filteredRating1={filteredRating1}
                 isRightOpen={isRightOpen}
                 filteredJson={newJson} />
         </div>
