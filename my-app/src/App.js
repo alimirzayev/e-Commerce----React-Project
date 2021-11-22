@@ -1,10 +1,10 @@
 import './App.css';
 import React, { useState } from 'react'
 
-import { MainContext, useContext } from './Context';
+import { MainContext } from './Context';
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { CartProvider, useCart } from "react-use-cart";
+import { BrowserRouter as Switch, Route } from 'react-router-dom';
+import { CartProvider } from "react-use-cart";
 
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer';
@@ -19,13 +19,21 @@ function App() {
 
   })
 
-  const data = {
-    ...methods
+  const appendMethods = newMethods => {
+    setMethods({
+      ...methods,
+      ...newMethods
+    })
   }
 
+  const data = {
+    appendMethods,
+    ...methods
+  }
+  console.log(methods.value)
   return (
     <div className="App">
-      <MainContext.Provider >
+      <MainContext.Provider value={data} >
 
         <CartProvider>
           <Header />

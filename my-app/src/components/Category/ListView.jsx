@@ -1,6 +1,5 @@
-import React, { useEffect, useState } from 'react'
-import JSONDATA from '../Main/Search.json'
-import { CartProvider, useCart } from "react-use-cart";
+import React from 'react'
+import { useCart } from "react-use-cart";
 import { Link } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
 

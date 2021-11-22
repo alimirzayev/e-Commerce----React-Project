@@ -1,4 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import { MainContext, useContext } from '../Context';
 
 import CategoryMain from '../components/Category/CategoryMain'
@@ -57,6 +57,10 @@ function Categorypage() {
         const jd10 = JSONDATA.filter((val) => val.rating === 1 || val.rating === 0.5);
         setNewJson(jd10)
     }
+    const betweenPrice = () => {
+        const jd11 = JSONDATA.filter((val) => val.price > methods.value[0] && val.price < methods.value[1]);
+        setNewJson(jd11)
+    }
 
     const [isRightOpen, setIsRightOpen] = useState(true)
     const [isListOpen, setIsListOpen] = useState(false)
@@ -75,6 +79,9 @@ function Categorypage() {
     const selectedFilterFunction = (event) => {
         selectedFilter.current.textContent = event.target.value
     }
+
+    const methods = useContext(MainContext)
+    console.log(methods);
 
 
     return (
@@ -163,18 +170,16 @@ function Categorypage() {
             </div>
 
 
-            <MainContext.Provider>
-                <CategoryMain
-                    filteredRating5={filteredRating5}
-                    filteredRating4={filteredRating4}
-                    filteredRating3={filteredRating3}
-                    filteredRating2={filteredRating2}
-                    filteredRating1={filteredRating1}
+            <CategoryMain
+                filteredRating5={filteredRating5}
+                filteredRating4={filteredRating4}
+                filteredRating3={filteredRating3}
+                filteredRating2={filteredRating2}
+                filteredRating1={filteredRating1}
 
-                    isRightOpen={isRightOpen}
-                    filteredJson={newJson} />
-            </MainContext.Provider>
-        </div>
+                isRightOpen={isRightOpen}
+                filteredJson={newJson} />
+        </div >
     )
 }
 

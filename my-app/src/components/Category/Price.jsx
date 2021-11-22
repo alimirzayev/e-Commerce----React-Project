@@ -1,17 +1,36 @@
-import React, { useState } from 'react'
-import Slider from '@mui/material/Slider';
+import React, { useState, useEffect } from 'react'
 
+import { MainContext, useContext } from '../../Context';
+
+import Slider from '@mui/material/Slider';
 function Price() {
 
-    function valuetext(value) {
-        return `${value}°C`;
-    }
+    const { appendMethods } = useContext(MainContext)
 
     const [value, setValue] = useState([0, 100]);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
     };
+
+    function valuetext(value) {
+        return `${value}`;
+    }
+
+    useEffect(() => {
+        // if (frs !== 1) {
+        //     int1 = setInterval(() => {
+        //         appendMethods({ value })
+        //         console.log(value)
+        //     }, 2000);
+        // }
+        // frs = 0;
+        // return () => {
+        //     clearInterval(int1)
+        // };
+        appendMethods({ value })
+        console.log('appended')
+    }, [value])
 
     return (
         <div className="price">
@@ -39,10 +58,10 @@ function Price() {
                 </label>
             </div>
 
-            <div className="btn-group">
+            {/* <div className="btn-group">
                 <button>Apply</button>
                 <a href="">Reset</a>
-            </div>
+            </div> */}
 
         </div>
     )
