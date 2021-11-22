@@ -12,25 +12,22 @@ import Home from './Page/Home';
 import Checkout from './Page/Checkout';
 import Detail from './Page/Detail';
 import Categorypage from './Page/Categorypage';
+import JSONDATA from './components/Main/Search.json'
 
 function App() {
 
-  const [methods, setMethods] = useState({
+  const [newJson, setNewJson] = useState(JSONDATA)
 
-  })
-
-  const appendMethods = newMethods => {
-    setMethods({
-      ...methods,
-      ...newMethods
-    })
+  const update = (param) => {
+    setNewJson(param);
   }
 
   const data = {
-    appendMethods,
-    ...methods
+    JSONDATA,
+    newJson,
+    update
   }
-  console.log(methods.value)
+
   return (
     <div className="App">
       <MainContext.Provider value={data} >

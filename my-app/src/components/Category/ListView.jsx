@@ -1,15 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useCart } from "react-use-cart";
 import { Link } from 'react-router-dom';
 import Rating from '@mui/material/Rating';
+import { MainContext, useContext } from '../../Context';
+
 
 function ListView(props) {
+    const ctx = useContext(MainContext)
+    const [newJson, setNewJson] = useState(ctx.JSONDATA)
+
     const { addItem, inCart } = useCart();
 
     return (
         <div className="categoryRight listView">
 
-            {props.filteredJson.map((val, key) => {
+            {ctx.newJson.map((val, key) => {
 
                 const alreadyAdded = inCart(val.id);
 

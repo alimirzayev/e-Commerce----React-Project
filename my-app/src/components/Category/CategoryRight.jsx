@@ -1,16 +1,18 @@
-import React, { useEffect, useState } from 'react'
-import JSONDATA from '../Main/Search.json'
-import { CartProvider, useCart } from "react-use-cart";
+import React from 'react'
+import { MainContext, useContext } from '../../Context';
+import { useCart } from "react-use-cart";
 import { Link } from 'react-router-dom';
 
 function CategoryRight(props) {
+
+    const ctx = useContext(MainContext)
 
     const { addItem, inCart } = useCart();
 
     return (
         <div className="categoryRight">
 
-            {props.filteredJson.map((val, key) => {
+            {ctx.newJson.map((val, key) => {
 
                 const alreadyAdded = inCart(val.id);
 
