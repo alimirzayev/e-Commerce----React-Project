@@ -269,3 +269,7 @@
 .MuiSvgIcon-root path {
   color: #fdbc15;
 }
+
+.avatar {
+  background-color: "#ff5722" !important;
+}

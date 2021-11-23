@@ -9,12 +9,10 @@ function CategoryMain(props) {
     return (
         <div className="categoryMain">
 
-            <CategoryLeft
+            <CategoryLeft />
 
-                filteredJson={props.filteredJson} />
-
-            {props.isRightOpen && <CategoryRight filteredJson={props.filteredJson} />}
-            {!props.isRightOpen && < ListView filteredJson={props.filteredJson} />}
+            {props.isRightOpen && <CategoryRight />}
+            {!props.isRightOpen && < ListView />}
 
         </div>
     )
