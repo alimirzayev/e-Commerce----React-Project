@@ -11,7 +11,7 @@ function ListView(props) {
     return (
         <div className="categoryRight listView">
 
-            {props.data.map((val, key) => {
+            {props.dynamicData.map((val, key) => {
 
                 const alreadyAdded = inCart(val.id);
 

@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 function CategoryRight(props) {
 
-    let JSONDATA = props.data
+    let JSONDATA = props.dynamicData
 
     const { addItem, inCart } = useCart();
 

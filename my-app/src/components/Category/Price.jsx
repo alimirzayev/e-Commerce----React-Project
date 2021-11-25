@@ -9,8 +9,8 @@ function Price(props) {
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
+        props.dispatch({ type: "PriceBetween", value: newValue })
         const jd11 = JSONDATA.filter((val) => val.price > newValue[0] && val.price < newValue[1]);
-        setValue(jd11);
     };
 
     return (
@@ -23,7 +23,6 @@ function Price(props) {
                     value={value}
                     onChange={handleChange}
                     valueLabelDisplay="auto"
-
                 />
             </div>
 

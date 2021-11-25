@@ -3,32 +3,24 @@ import { connect } from 'react-redux';
 
 function Review(props) {
 
-    const [newJson, setNewJson] = useState()
-    let JSONDATA = props.data
-
     const filteredRating5 = () => {
-        const jd6 = JSONDATA.filter((val) => val.rating === 5 || val.rating === 4.5);
-        setNewJson(jd6)
+        props.dispatch({ type: "Rating5", value: "" })
     }
 
     const filteredRating4 = () => {
-        const jd7 = JSONDATA.filter((val) => val.rating === 4 || val.rating === 3.5);
-        setNewJson(jd7)
+        props.dispatch({ type: "Rating4", value: "" })
     }
 
     const filteredRating3 = () => {
-        const jd8 = JSONDATA.filter((val) => val.rating === 3 || val.rating === 2.5);
-        setNewJson(jd8)
+        props.dispatch({ type: "Rating3", value: "" })
     }
 
     const filteredRating2 = () => {
-        const jd9 = JSONDATA.filter((val) => val.rating === 2 || val.rating === 1.5);
-        setNewJson(jd9)
+        props.dispatch({ type: "Rating2", value: "" })
     }
 
     const filteredRating1 = () => {
-        const jd10 = JSONDATA.filter((val) => val.rating === 1 || val.rating === 0.5);
-        setNewJson(jd10)
+        props.dispatch({ type: "Rating1", value: "" })
     }
 
     return (
