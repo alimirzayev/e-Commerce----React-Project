@@ -1,37 +1,30 @@
 import React, { useState, useRef } from 'react'
-import { MainContext, useContext } from '../Context';
+import { connect } from 'react-redux'
 import CategoryMain from '../components/Category/CategoryMain'
 import '../components/Category/Category.css'
 
-function Categorypage() {
+function Categorypage(props) {
 
-    const ctx = useContext(MainContext)
-
-    const [newJson, setNewJson] = useState(ctx.JSONDATA)
+    let JSONDATA = props.data
 
     const sortingTitle = () => {
-        const jd = newJson.slice().sort((item1, item2) => item1.title.localeCompare(item2.title))
-        ctx.update(jd)
-    }
-
-    const sortingPrice = () => {
-        const jd2 = newJson.slice().sort((item1, item2) => item1.price - item2.price)
-        ctx.update(jd2)
-    }
-
-    const sortingPriceDes = () => {
-        const jd3 = newJson.slice().sort((item1, item2) => item2.price - item1.price);
-        ctx.update(jd3)
-    }
-
-    const sortingId = () => {
-        const jd4 = newJson.slice().sort((item1, item2) => item2.id - item1.id);
-        ctx.update(jd4)
+        props.dispatch({ type: "SortingTitle", value: "" })
     }
 
     const sortingTitleDes = () => {
-        const jd5 = newJson.slice().sort((item1, item2) => item2.title.localeCompare(item1.title))
-        ctx.update(jd5)
+        props.dispatch({ type: "SortingTitleDes", value: "" })
+    }
+
+    const sortingPrice = () => {
+        props.dispatch({ type: "SortingPrice", value: "" })
+    }
+
+    const sortingPriceDes = () => {
+        props.dispatch({ type: "SortingPriceDes", value: "" })
+    }
+
+    const sortingId = () => {
+        props.dispatch({ type: "SortingID", value: "" })
     }
 
     const [isRightOpen, setIsRightOpen] = useState(true)
@@ -86,7 +79,7 @@ function Categorypage() {
                     </div>
 
                     <div>
-                        <span>{newJson.length}</span>
+                        <span>{JSONDATA.length}</span>
                         <p>Products</p>
                     </div>
 
@@ -141,9 +134,11 @@ function Categorypage() {
 
             <CategoryMain
                 isRightOpen={isRightOpen}
-                filteredJson={newJson} />
+            />
         </div >
     )
 }
 
-export default Categorypage
+let mapStateToProps = state => state
+
+export default connect(mapStateToProps)(Categorypage)

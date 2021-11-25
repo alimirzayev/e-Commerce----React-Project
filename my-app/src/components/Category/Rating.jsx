@@ -1,34 +1,34 @@
 import React, { useState } from 'react'
-import { MainContext, useContext } from '../../Context';
+import { connect } from 'react-redux';
 
 function Review(props) {
 
-    const ctx = useContext(MainContext)
-    const [newJson, setNewJson] = useState(ctx.JSONDATA)
+    const [newJson, setNewJson] = useState()
+    let JSONDATA = props.data
 
     const filteredRating5 = () => {
-        const jd6 = ctx.JSONDATA.filter((val) => val.rating === 5 || val.rating === 4.5);
-        ctx.update(jd6)
+        const jd6 = JSONDATA.filter((val) => val.rating === 5 || val.rating === 4.5);
+        setNewJson(jd6)
     }
 
     const filteredRating4 = () => {
-        const jd7 = ctx.JSONDATA.filter((val) => val.rating === 4 || val.rating === 3.5);
-        ctx.update(jd7)
+        const jd7 = JSONDATA.filter((val) => val.rating === 4 || val.rating === 3.5);
+        setNewJson(jd7)
     }
 
     const filteredRating3 = () => {
-        const jd8 = ctx.JSONDATA.filter((val) => val.rating === 3 || val.rating === 2.5);
-        ctx.update(jd8)
+        const jd8 = JSONDATA.filter((val) => val.rating === 3 || val.rating === 2.5);
+        setNewJson(jd8)
     }
 
     const filteredRating2 = () => {
-        const jd9 = ctx.JSONDATA.filter((val) => val.rating === 2 || val.rating === 1.5);
-        ctx.update(jd9)
+        const jd9 = JSONDATA.filter((val) => val.rating === 2 || val.rating === 1.5);
+        setNewJson(jd9)
     }
 
     const filteredRating1 = () => {
-        const jd10 = ctx.JSONDATA.filter((val) => val.rating === 1 || val.rating === 0.5);
-        ctx.update(jd10)
+        const jd10 = JSONDATA.filter((val) => val.rating === 1 || val.rating === 0.5);
+        setNewJson(jd10)
     }
 
     return (
@@ -140,4 +140,5 @@ function Review(props) {
     )
 }
 
-export default Review
+let mapStateToProps = state => state
+export default connect(mapStateToProps)(Review)

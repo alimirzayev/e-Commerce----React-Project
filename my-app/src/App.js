@@ -1,7 +1,5 @@
 import './App.css';
-import React, { useState } from 'react'
-
-import { MainContext } from './Context';
+import React, { useState } from 'react';
 
 import { BrowserRouter as Switch, Route } from 'react-router-dom';
 import { CartProvider } from "react-use-cart";
@@ -12,53 +10,36 @@ import Home from './Page/Home';
 import Checkout from './Page/Checkout';
 import Detail from './Page/Detail';
 import Categorypage from './Page/Categorypage';
-import JSONDATA from './components/Main/Search.json'
 
 function App() {
 
-  const [newJson, setNewJson] = useState(JSONDATA)
-
-  const update = (param) => {
-    setNewJson(param);
-  }
-
-  const data = {
-    JSONDATA,
-    newJson,
-    update
-  }
-
   return (
     <div className="App">
-      <MainContext.Provider value={data} >
+      <CartProvider>
+        <Header />
 
-        <CartProvider>
-          <Header />
+        <Switch>
 
-          <Switch>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-            <Route exact path="/">
-              <Home />
-            </Route>
+          <Route path="/checkout">
+            <Checkout />
+          </Route>
 
-            <Route path="/checkout">
-              <Checkout />
-            </Route>
+          <Route exact path="/products/:id">
+            <Detail />
+          </Route>
 
-            <Route exact path="/products/:id">
-              <Detail />
-            </Route>
+          <Route exact path="/category">
+            <Categorypage />
+          </Route>
 
-            <Route exact path="/category">
-              <Categorypage />
-            </Route>
+        </Switch>
 
-          </Switch>
-
-          <Footer />
-        </CartProvider>
-
-      </MainContext.Provider >
+        <Footer />
+      </CartProvider>
     </div>
   );
 }

@@ -1,18 +1,18 @@
 import React from 'react'
-import { MainContext, useContext } from '../../Context';
+import { connect } from 'react-redux';
 import { useCart } from "react-use-cart";
 import { Link } from 'react-router-dom';
 
 function CategoryRight(props) {
 
-    const ctx = useContext(MainContext)
+    let JSONDATA = props.data
 
     const { addItem, inCart } = useCart();
 
     return (
         <div className="categoryRight">
 
-            {ctx.newJson.map((val, key) => {
+            {JSONDATA.map((val, key) => {
 
                 const alreadyAdded = inCart(val.id);
 
@@ -38,4 +38,5 @@ function CategoryRight(props) {
     )
 }
 
-export default CategoryRight
+let mapStateToProps = state => state
+export default connect(mapStateToProps)(CategoryRight)
