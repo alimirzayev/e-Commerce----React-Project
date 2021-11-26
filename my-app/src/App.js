@@ -10,6 +10,7 @@ import Home from './Page/Home';
 import Checkout from './Page/Checkout';
 import Detail from './Page/Detail';
 import Categorypage from './Page/Categorypage';
+import Blogpage from './Page/Blogpage';
 
 function App() {
 
@@ -34,6 +35,10 @@ function App() {
 
           <Route exact path="/category">
             <Categorypage />
+          </Route>
+
+          <Route exact path="/blogpage">
+            <Blogpage />
           </Route>
 
         </Switch>
