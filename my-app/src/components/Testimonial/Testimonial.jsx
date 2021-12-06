@@ -1,57 +1,117 @@
 import React from 'react'
-import Review from './Review'
 import './Testimonial.css';
+
+import { Swiper, SwiperSlide } from "swiper/react";
+import 'swiper/swiper-bundle.min.css'
+import 'swiper/swiper.min.css'
+import SwiperCore, { Navigation } from 'swiper';
 
 function Testimonial() {
 
-    let first = {
-        review: "This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here",
-        author: "Name and Surname"
-    }
-
-    let second = {
-        review: "This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here",
-        author: "Name and Surname"
-    }
-
-    let third = {
-        review: "This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here",
-        author: "Name and Surname"
-    }
-
-    let fourth = {
-        review: "This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here",
-        author: "Name and Surname"
-    }
-
-    let fifth = {
-        review: "This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here",
-        author: "Name and Surname"
-    }
-
-    let sixth = {
-        review: "This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here",
-        author: "Name and Surname"
-    }
-
+    SwiperCore.use([Navigation]);
     return (
-        <div className="ourCustomers">
+        <div style={{ marginTop: "60px" }}>
 
-            <div className="sectionHeading">
+            <Swiper navigation={true} className="mySwiper ">
 
-            <h3>Our customers says</h3>
-            <a href="#">Button <i className="fas fa-angle-right"></i></a>
+                <SwiperSlide className="sliderContainer">
+                    <div className="firstReview" id="firstReview">
 
-            </div>
-            
-            <div className="ourCustomersSays">
-            <Review detail={first} />
-            <Review detail={second}  />
-            <Review detail={third} />
-            <Review detail={fourth} />
-            <Review detail={fifth} />
-            <Review detail={sixth} />
-            </div>
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+
+                    <div className="firstReview notActiveMobile" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+
+                    <div className="firstReview notActiveMobile" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="sliderContainer">
+                    <div className="firstReview" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+
+                    <div className="firstReview notActiveMobile" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+
+                    <div className="firstReview notActiveMobile" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+                </SwiperSlide>
+
+                <SwiperSlide className="sliderContainer">
+                    <div className="firstReview" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+
+                    <div className="firstReview notActiveMobile" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+
+                    <div className="firstReview notActiveMobile" id="firstReview">
+
+                        <p>“ This is an super space for your customers qoute. Don’t worry it works smooth as pie. You will get all what you need by writiing a text here “</p>
+
+                        <span>Name and Surname</span>
+
+                        <div className="reviewCircle"></div>
+
+                    </div>
+                </SwiperSlide>
+
+            </Swiper>
+
         </div>
     )
 }

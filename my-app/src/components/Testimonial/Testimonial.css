@@ -115,3 +115,289 @@
   color: white;
   padding-top: 17px;
 }
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: black !important;
+  width: 15px !important;
+}
+
+.sliderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial {
+  margin: 0px 64px;
+}
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+  .ourCustomers {
+    width: 100%;
+    min-height: 450px;
+    overflow: hidden;
+    transform: translateY(50px);
+  }
+
+  .sectionHeading {
+    display: none;
+  }
+
+  .ourCustomersSays {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  .firstReview {
+    width: 100%;
+    min-height: 206px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 24px 32px;
+    text-align: center;
+    transition: 0.5;
+  }
+
+  .firstReview p {
+    color: #151515;
+    font-family: "Semi-Bold";
+    padding-bottom: 24px;
+  }
+
+  .firstReview span {
+    color: #a9a9a9;
+    font-family: "Semi-Bold";
+    font-size: 0.95em;
+  }
+
+  .reviewCircle {
+    display: none;
+  }
+
+  .leftArrow {
+    width: 26px;
+    height: 42px;
+    background: #151515;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    top: 37%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 50;
+  }
+
+  .leftArrow i {
+    color: white;
+    padding-top: 14px;
+  }
+
+  .rightArrow {
+    width: 26px;
+    height: 42px;
+    background: #151515;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: absolute;
+    left: 91.6vw;
+    top: 37%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 90;
+  }
+
+  .rightArrow i {
+    color: white;
+    padding-top: 14px;
+  }
+
+  .notActiveMobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+  .ourCustomers {
+    width: 100%;
+    min-height: 450px;
+    overflow: hidden;
+    transform: translateY(50px);
+  }
+
+  .sectionHeading {
+    display: none;
+  }
+
+  .ourCustomersSays {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  .firstReview {
+    width: 100%;
+    min-height: 206px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 24px 32px;
+    text-align: center;
+    transition: 0.5;
+  }
+
+  .firstReview p {
+    color: #151515;
+    font-family: "Semi-Bold";
+    padding-bottom: 24px;
+  }
+
+  .firstReview span {
+    color: #a9a9a9;
+    font-family: "Semi-Bold";
+    font-size: 0.95em;
+  }
+
+  .reviewCircle {
+    display: none;
+  }
+
+  .leftArrow {
+    width: 26px;
+    height: 42px;
+    background: #151515;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    top: 37%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 50;
+  }
+
+  .leftArrow i {
+    color: white;
+    padding-top: 14px;
+  }
+
+  .rightArrow {
+    width: 26px;
+    height: 42px;
+    background: #151515;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: absolute;
+    left: 91.6vw;
+    top: 37%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 90;
+  }
+
+  .rightArrow i {
+    color: white;
+    padding-top: 14px;
+  }
+
+  .notActiveMobile {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .ourCustomers {
+    width: 100%;
+    min-height: 450px;
+    overflow: hidden;
+    transform: translateY(50px);
+  }
+
+  .sectionHeading {
+    display: none;
+  }
+
+  .ourCustomersSays {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+  }
+
+  .firstReview {
+    width: 100%;
+    min-height: 206px;
+    border: 1px solid #f1f1f1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    padding: 24px 32px;
+    text-align: center;
+    transition: 0.5;
+  }
+
+  .firstReview p {
+    color: #151515;
+    font-family: "Semi-Bold";
+    padding-bottom: 24px;
+  }
+
+  .firstReview span {
+    color: #a9a9a9;
+    font-family: "Semi-Bold";
+    font-size: 0.95em;
+  }
+
+  .reviewCircle {
+    display: none;
+  }
+
+  .leftArrow {
+    width: 26px;
+    height: 42px;
+    background: #151515;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: absolute;
+    left: 0;
+    top: 37%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 50;
+  }
+
+  .leftArrow i {
+    color: white;
+    padding-top: 14px;
+  }
+
+  .rightArrow {
+    width: 26px;
+    height: 42px;
+    background: #151515;
+    box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+    position: absolute;
+    left: 91.6vw;
+    top: 37%;
+    cursor: pointer;
+    text-align: center;
+    z-index: 90;
+  }
+
+  .rightArrow i {
+    color: white;
+    padding-top: 14px;
+  }
+
+  .notActiveMobile {
+    display: none;
+  }
+}

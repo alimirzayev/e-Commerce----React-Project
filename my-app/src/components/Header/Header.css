@@ -482,3 +482,211 @@ nav ul {
     color: #c2c2c2;
   }
 }
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+  .headerReact {
+    transform: translateY(-25px);
+  }
+
+  header {
+    width: 100%;
+    transform: translateY(-26px);
+    position: relative;
+    z-index: 99;
+  }
+
+  .topHeader {
+    display: none;
+  }
+
+  #hamburger {
+    position: absolute !important;
+    top: 72% !important;
+    left: -100% !important;
+    width: 100vw !important;
+    height: 91.75vh !important;
+    background-color: rgba(0, 0, 0, 0.856) !important;
+    z-index: -5;
+
+    color: white;
+    font-family: "Semi-Bold";
+    padding: 30px 20px;
+  }
+
+  #hamburger ul li {
+    margin-bottom: 8px;
+  }
+
+  #hamburger ul li a {
+    color: white;
+    font-family: "Bold";
+    font-size: 1.13em;
+  }
+
+  .mainHeader {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 99;
+  }
+
+  .mainHeaderRight {
+    transform: translateY(2px);
+  }
+
+  .mainHeaderUser {
+    margin-right: 14px;
+  }
+
+  .center {
+    display: block;
+    margin-right: 10px;
+    z-index: 4;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mainHeaderBasketCount {
+    font-size: 0.9em;
+  }
+
+  .mainHeaderMiddleContainer {
+    display: none;
+  }
+
+  .inputResponsive {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-12px);
+    position: relative;
+  }
+
+  .inputResponsive input {
+    width: 90%;
+    height: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    outline: none;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "Semi-Bold";
+    position: relative;
+    padding: 0px 30px;
+  }
+
+  .inputResponsive i {
+    position: absolute;
+    right: 7%;
+    color: #c2c2c2;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  .headerReact {
+    transform: translateY(-25px);
+  }
+
+  header {
+    width: 100%;
+    transform: translateY(-26px);
+    position: relative;
+    z-index: 99;
+  }
+
+  .topHeader {
+    display: none;
+  }
+
+  #hamburger {
+    position: absolute !important;
+    top: 72% !important;
+    left: -100% !important;
+    width: 100vw !important;
+    height: 91.75vh !important;
+    background-color: rgba(0, 0, 0, 0.856) !important;
+    z-index: -5;
+
+    color: white;
+    font-family: "Semi-Bold";
+    padding: 30px 20px;
+  }
+
+  #hamburger ul li {
+    margin-bottom: 8px;
+  }
+
+  #hamburger ul li a {
+    color: white;
+    font-family: "Bold";
+    font-size: 1.13em;
+  }
+
+  .mainHeader {
+    width: 100%;
+    height: 110px;
+    display: flex;
+    padding: 10px 10px;
+    position: relative;
+    z-index: 99;
+  }
+
+  .mainHeaderRight {
+    transform: translateY(2px);
+  }
+
+  .mainHeaderUser {
+    margin-right: 14px;
+  }
+
+  .center {
+    display: block;
+    margin-right: 10px;
+    z-index: 4;
+  }
+
+  nav {
+    display: none;
+  }
+
+  .mainHeaderBasketCount {
+    font-size: 0.9em;
+  }
+
+  .mainHeaderMiddleContainer {
+    display: none;
+  }
+
+  .inputResponsive {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateY(-12px);
+    position: relative;
+  }
+
+  .inputResponsive input {
+    width: 90%;
+    height: 30px;
+    background-color: #f9f9f9;
+    border: 1px solid #d1d1d1;
+    outline: none;
+    border-radius: 6px;
+    text-align: center;
+    font-family: "Semi-Bold";
+    position: relative;
+    padding: 0px 30px;
+  }
+
+  .inputResponsive i {
+    position: absolute;
+    right: 7%;
+    color: #c2c2c2;
+  }
+}
