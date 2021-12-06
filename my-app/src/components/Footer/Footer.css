@@ -17,3 +17,21 @@ footer ul li {
   font-family: "Medium";
   color: #6a983c;
 }
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 16px 0px;
+  }
+
+  .footer1,
+  .footer2,
+  .footer3,
+  .footer4 {
+    margin-top: 25px;
+  }
+}
