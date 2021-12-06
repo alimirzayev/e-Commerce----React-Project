@@ -1,18 +1,15 @@
 import React from 'react'
-import { CartProvider, useCart } from "react-use-cart";
 import { Link } from 'react-router-dom';
-import JSONDATA from './Product.json'
+import { connect } from 'react-redux'
 
-function MainRightCards() {
+function MainRightCards(props) {
 
-    const { addItem, inCart } = useCart();
+    let JSONDATA = props.data
 
     return (
         <div className="mainRightCards">
 
-            {JSONDATA.map((val, key) => {
-
-                const alreadyAdded = inCart(val.id);
+            {JSONDATA.slice(0, 6).map((val, key) => {
 
                 return (
                     <div className="mainRightCard1 card" key={key}>
@@ -24,8 +21,8 @@ function MainRightCards() {
                         </Link>
                         <div className="cardContainer">
                             <h3 className="card-price">{val.price} USD</h3>
-                            <button id="buynow" className="button" onClick={() => addItem(val)} >
-                                {alreadyAdded ? "In Cart" : "Add to Cart"}
+                            <button id="buynow" className="button" >
+                                Add To Cart
                             </button>
                         </div>
                     </div>
@@ -35,4 +32,5 @@ function MainRightCards() {
     )
 }
 
-export default MainRightCards
+const mapStateToProps = state => state
+export default connect(mapStateToProps)(MainRightCards)

@@ -1,12 +1,23 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import './Section.css'
-import { CartProvider, useCart } from "react-use-cart";
-import JSONDATA from './Section.json'
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-function Sec() {
+function Sec(props) {
 
-    const { addItem, inCart } = useCart();
+    let JSONDATA = props.data
+    console.log(props.wishlist);
+
+    const imageSrc = useRef()
+
+    const addwishlist = (event) => {
+        console.log(imageSrc.current.src);
+    }
+
+    const wishlist = () => {
+        props.dispatch({ type: "Wishlist", value: addwishlist })
+    }
+
 
     return (
         <div className="headline">
@@ -19,14 +30,12 @@ function Sec() {
             </div>
 
             <div className="headlineCards">
-                {JSONDATA.map((val, key) => {
-
-                    const alreadyAdded = inCart(val.id);
+                {JSONDATA.slice(4, 8).map((val, key) => {
 
                     return (
                         <div className="mainRightCard1 card" key={key}>
                             <Link to={`/products/${val.id}`}>
-                                <img className="card-img"
+                                <img ref={imageSrc} className="card-img"
                                     src={val.img} />
                                 <h3 className="card-title">{val.title}</h3>
                                 <p>{val.desc}</p>
@@ -34,8 +43,10 @@ function Sec() {
 
                             <div className="cardContainer">
                                 <h3 className="card-price">{val.price} USD</h3>
-                                <button id="buynow" className="button" onClick={() => addItem(val)} >
-                                    {alreadyAdded ? "In Cart" : "Add to Cart"}
+                                <button id="buynow" className="button"
+                                    onClick={addwishlist}
+                                >
+                                    Add to Cart
                                 </button>
                             </div>
                         </div>
@@ -47,4 +58,6 @@ function Sec() {
     )
 }
 
-export default Sec
+const mapStateToProps = state => state
+
+export default connect(mapStateToProps)(Sec)

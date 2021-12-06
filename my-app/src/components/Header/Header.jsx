@@ -6,11 +6,11 @@ import './Header.css';
 
 function Header() {
     return (
-        <div>
-            <HeadingTop />  
+        <div className="headerReact">
+            <HeadingTop />
             <hr />
-            <HeadingMiddle />  
-            <HeadingBottom />  
+            <HeadingMiddle />
+            <HeadingBottom />
         </div>
     )
 }

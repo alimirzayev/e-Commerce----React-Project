@@ -173,29 +173,24 @@ hr {
 }
 
 .mainRightCards {
-  /* height: 60%; @media */
+  width: 100%;
   margin-top: 10%;
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
 }
 
-.mainRightCard1,
-.mainRightCard2,
-.mainRightCard3,
-.mainRightCard4 {
+.mainRightCard1 {
   width: 269px;
   height: 323px;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
   border-radius: 12px;
   padding: 16px;
+  margin: 3%;
 }
 
-.mainRightCard1 img,
-.mainRightCard2 img,
-.mainRightCard3 img,
-.mainRightCard4 img {
+.mainRightCard1 img {
   width: 100%;
   border-radius: 12px;
 }
@@ -207,20 +202,14 @@ hr {
   flex-wrap: wrap;
 }
 
-.mainRightCard1 h3,
-.mainRightCard2 h3,
-.mainRightCard3 h3,
-.mainRightCard4 h3 {
+.mainRightCard1 h3 {
   font-family: "Bold";
   color: #151515;
   font-size: 16px;
   padding-top: 10px;
 }
 
-.mainRightCard1 p,
-.mainRightCard2 p,
-.mainRightCard3 p,
-.mainRightCard4 p {
+.mainRightCard1 p {
   font-family: "Medium";
   font-size: 13px;
   color: #575757;
@@ -253,4 +242,6 @@ hr {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
+}
+@media screen and (min-width: 320px) and (max-width: 370px) {
 }

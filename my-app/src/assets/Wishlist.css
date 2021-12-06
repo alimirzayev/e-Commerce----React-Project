@@ -1,0 +1,10 @@
+.Whislist {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wishlistmain {
+  margin: -5% 10% 5% 10%;
+}
