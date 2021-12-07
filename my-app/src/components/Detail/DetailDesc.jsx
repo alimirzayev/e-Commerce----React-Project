@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router';
 import JSONDATA from '../Main/Search.json'
+import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
 import Rating from '@mui/material/Rating';
 
 function DetailDesc() {
@@ -13,7 +14,20 @@ function DetailDesc() {
 
     return (
         <div className="detailDesc">
+
+            <div className="productImage detailBannerImg">
+                <a
+                    href={item[0].img4}
+                    data-fancybox="gallery"
+                    data-caption="Optional caption"
+                >
+                    <img src={item[0].img1} alt="" />
+                </a>
+            </div>
+
+
             <h1>{item[0].title}</h1>
+
             <div className="detailReview">
                 <div>
                     <Rating name="half-rating-read"
