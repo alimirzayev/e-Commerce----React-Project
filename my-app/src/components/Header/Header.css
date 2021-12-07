@@ -298,9 +298,9 @@ nav ul {
   width: 30px;
 }
 
-.center:before,
-.center:after,
-.center div {
+.before,
+.after,
+.origin {
   background: black;
   content: "";
   display: block;
@@ -309,7 +309,7 @@ nav ul {
   margin: 4px 0;
   transition: 0.5s;
 }
-.center:hover:before {
+/* .center:hover:before {
   transform: translateY(8px) rotate(135deg);
 }
 .center:hover:after {
@@ -317,7 +317,7 @@ nav ul {
 }
 .center:hover div {
   transform: scale(0);
-}
+} */
 
 .hrReact {
   width: 100% !important;

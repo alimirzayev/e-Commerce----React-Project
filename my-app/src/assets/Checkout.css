@@ -500,3 +500,27 @@ option,
   border-radius: 12px;
   font-family: "Bold";
 }
+
+@media screen and (min-width: 320px) and (max-width: 370px) {
+  ul.breadcrumb {
+    padding: 10px 12px;
+    list-style: none;
+    background: #fdfdfd;
+  }
+}
+
+@media screen and (min-width: 370px) and (max-width: 414px) {
+  ul.breadcrumb {
+    padding: 10px 12px;
+    list-style: none;
+    background: #fdfdfd;
+  }
+}
+
+@media screen and (min-width: 414px) and (max-width: 767px) {
+  ul.breadcrumb {
+    padding: 10px 12px;
+    list-style: none;
+    background: #fdfdfd;
+  }
+}

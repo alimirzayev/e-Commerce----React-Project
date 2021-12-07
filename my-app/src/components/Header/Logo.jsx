@@ -5,26 +5,44 @@ import { gsap } from "gsap";
 
 
 function Logo() {
-
+    let center = useRef();
     let hamburger = useRef();
+    let before = useRef();
+    let origin = useRef();
+    let after = useRef();
+
     let toggle = true;
 
     const openMenu = () => {
         if (toggle) {
             gsap.to(hamburger.current, 0.3, { display: 'block', x: "100%" });
+            gsap.to(before.current, 0.1, { rotation: 135, y: 8 });
+            gsap.to(after.current, 0.1, { rotation: -135, y: -8 })
+            gsap.to(origin.current, 0.1, { scale: 0 })
+
+
+            document.body.style.overflow = "hidden"
             toggle = false
         } else {
             gsap.to(hamburger.current, 0.3, { display: 'block', x: "-100%" });
+            gsap.to(before.current, 0.1, { rotation: 0, y: 0 });
+            gsap.to(after.current, 0.1, { rotation: 0, y: 0 })
+            gsap.to(origin.current, 0.1, { scale: 1 })
+
             toggle = true
+            document.body.style.overflow = "scroll"
         }
     }
 
     return (
         <div className="mainHeaderLeft">
 
-            <div onClick={openMenu} className="center" id="center">
-                <div>
-                </div>
+            <div ref={center} onClick={openMenu} className="center" id="center">
+
+                <div ref={before} className="before"></div>
+                <div ref={origin} className="origin"></div>
+                <div ref={after} className="after"></div>
+
             </div>
 
             <div ref={hamburger} id="hamburger">
