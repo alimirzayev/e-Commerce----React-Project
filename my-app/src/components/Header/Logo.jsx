@@ -30,7 +30,7 @@ function Logo() {
             gsap.to(origin.current, 0.1, { scale: 1 })
 
             toggle = true
-            document.body.style.overflow = "scroll"
+            document.body.style.overflow = "unset"
         }
     }
 

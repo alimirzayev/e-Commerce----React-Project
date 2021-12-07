@@ -309,15 +309,6 @@ nav ul {
   margin: 4px 0;
   transition: 0.5s;
 }
-/* .center:hover:before {
-  transform: translateY(8px) rotate(135deg);
-}
-.center:hover:after {
-  transform: translateY(-8px) rotate(-135deg);
-}
-.center:hover div {
-  transform: scale(0);
-} */
 
 .hrReact {
   width: 100% !important;
@@ -327,6 +318,7 @@ nav ul {
 
 #hamburger {
   display: none;
+  z-index: 9000;
 }
 
 .searchDrop {
@@ -402,7 +394,7 @@ nav ul {
     width: 100vw !important;
     height: 91.75vh !important;
     background-color: rgba(0, 0, 0, 0.856) !important;
-    z-index: -5;
+    z-index: 9000;
 
     color: white;
     font-family: "Semi-Bold";
@@ -506,7 +498,7 @@ nav ul {
     width: 100vw !important;
     height: 91.75vh !important;
     background-color: rgba(0, 0, 0, 0.856) !important;
-    z-index: -5;
+    z-index: 9000;
 
     color: white;
     font-family: "Semi-Bold";
@@ -610,7 +602,7 @@ nav ul {
     width: 100vw !important;
     height: 91.75vh !important;
     background-color: rgba(0, 0, 0, 0.856) !important;
-    z-index: -5;
+    z-index: 9000;
 
     color: white;
     font-family: "Semi-Bold";
