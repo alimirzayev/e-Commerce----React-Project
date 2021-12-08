@@ -2,7 +2,8 @@ import JSONDATA from './components/Main/Search.json'
 
 const initalState = {
     data: JSONDATA,
-    dynamicData: JSONDATA
+    dynamicData: JSONDATA,
+    wishlistData: [],
 }
 
 export default function Reducer(state = initalState, action) {
@@ -10,12 +11,12 @@ export default function Reducer(state = initalState, action) {
         case "SortingTitle":
             let NewJsonData = state.data.slice().sort((item1, item2) => item1.title.localeCompare(item2.title))
             return { ...state, dynamicData: NewJsonData }
-            break
+            break;
 
         case "SortingTitleDes":
             let NewJsonData2 = state.data.slice().sort((item1, item2) => item2.title.localeCompare(item1.title))
             return { ...state, dynamicData: NewJsonData2 }
-            break
+            break;
 
         case "SortingPrice":
             let NewJsonData3 = state.data.slice().sort((item1, item2) => item1.price - item2.price)
@@ -63,11 +64,9 @@ export default function Reducer(state = initalState, action) {
             break
 
         case "Wishlist":
-
-
-        // let NewJsonData12 = state.data.filter((val) => val.price > action.value[0] && val.price < action.value[1]);
-        // return { ...state, wishlist: NewJsonData12 }
-        // break
+            console.log(action);
+            return { ...state, wishlistData: action.action }
+            break
     }
     return state
 }

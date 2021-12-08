@@ -5,29 +5,27 @@ import { Link } from 'react-router-dom';
 function CategoryRight(props) {
 
     let JSONDATA = props.dynamicData
-    let [cart, setCart] = useState([]);
 
+    let [cart, setCart] = useState([]);
     let localCart = localStorage.getItem("Eli");
 
     useEffect(() => {
         localCart = JSON.parse(localCart);
         if (localCart) setCart(localCart);
-    }, [cart]);
+    }, []);
 
     const addItem = (item) => {
         let cartCopy = [...cart];
 
         let { id } = item;
-        console.log(id)
-        let existingItem = cartCopy.find((cartItem) => cartItem.id == id);
 
+        let existingItem = cartCopy.find((cartItem) => cartItem.id === id);
 
         if (existingItem) {
             existingItem.quantity += 1;
         } else {
             item.quantity = 1;
             cartCopy.push(item);
-
         }
 
         setCart(cartCopy);
@@ -47,7 +45,25 @@ function CategoryRight(props) {
 
         let stringCart = JSON.stringify(cartCopy, replacerFunc());
         localStorage.setItem("Eli", stringCart);
+        props.dispatch({ type: "Wishlist", action: cart })
     };
+
+    const removeItem = (item) => {
+
+        let cartCopy = [...cart]
+        console.log(cartCopy, item)
+
+        cartCopy = cartCopy.filter(salam => salam.id !== item.id);
+        console.log(cartCopy)
+        setCart(cartCopy);
+
+        let cartString = JSON.stringify(cartCopy)
+        localStorage.setItem('Eli', cartString)
+    }
+
+    // useEffect(() => {
+    //     props.dispatch({ type: "Wishlist", action: cart })
+    // }, [cart])
 
     return (
         <div className="categoryRight">
@@ -66,6 +82,7 @@ function CategoryRight(props) {
                             <h3 className="card-price" >{item.price} USD</h3>
                             <button id="buynow" className="button"
                                 onClick={() => addItem(item)} > Add to Cart </button>
+                            <button onClick={() => removeItem(item)}>Remove Cart</button>
                         </div>
                     </div>
                 )
