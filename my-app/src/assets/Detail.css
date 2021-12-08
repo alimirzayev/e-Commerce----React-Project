@@ -616,3 +616,110 @@
     margin: 0 auto;
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  .detailReview p {
+    margin-top: -2px;
+  }
+
+  .detailMain {
+    margin: 0px 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .detailMainLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .productImage {
+    width: 90%;
+    height: inherit;
+  }
+
+  .detailMainRight {
+    width: 100%;
+    text-align: center;
+  }
+
+  .detailReview {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8 px;
+  }
+
+  .detailSpec {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .detailSpecLeft,
+  .detailSpecRight {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-family: "Medium";
+    padding: 0px 10px;
+  }
+
+  .detailBuy {
+    width: 100%;
+  }
+
+  .detailWish {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 10px;
+  }
+
+  .detailDescBottom {
+    padding-right: 0px;
+  }
+
+  .descBottomHeading {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 10px;
+    font-size: 0.9rem;
+  }
+
+  .Description {
+    padding: 0px 10px;
+  }
+
+  .headingReview div {
+    margin-left: 10px;
+    padding-top: 2px;
+  }
+
+  .headingReview div p {
+    margin-right: 23px;
+  }
+
+  .userReview {
+    text-align: left;
+    margin: 0px 8px;
+  }
+
+  .detailBannerImg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    margin: 0 auto;
+  }
+}

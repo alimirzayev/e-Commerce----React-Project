@@ -2,8 +2,7 @@ import JSONDATA from './components/Main/Search.json'
 
 const initalState = {
     data: JSONDATA,
-    dynamicData: JSONDATA,
-    wishlist: [{}]
+    dynamicData: JSONDATA
 }
 
 export default function Reducer(state = initalState, action) {

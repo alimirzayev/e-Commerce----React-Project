@@ -950,3 +950,151 @@ option,
     display: none;
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  ul.breadcrumb {
+    padding: 10px 12px;
+    list-style: none;
+    background: #fdfdfd;
+  }
+
+  .checkout {
+    transform: translateY(-40px);
+  }
+
+  .checkoutMain {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0px 12px;
+  }
+
+  .checkoutLeft {
+    width: 100%;
+  }
+
+  .billingInfoHeading div {
+    display: block;
+  }
+
+  .billingInfoContainer {
+    width: 100%;
+  }
+
+  .billingInfoContainer div {
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: 4px;
+  }
+
+  .billingInfoContainer div label {
+    margin-bottom: 14px;
+  }
+
+  .billingInfoContainer input,
+  .billingInfoContainer select,
+  .billingInfoContainer div span {
+    width: 100%;
+    border-radius: 4px;
+    padding: 0px 10px;
+  }
+
+  .billingInfoContainer div span {
+    justify-content: left;
+  }
+
+  .billingInfoContainer div span p {
+    margin-left: 8px;
+  }
+
+  .billingMethodShipping {
+    width: 100%;
+    padding: 0px 8px;
+  }
+
+  .shippingImg {
+    display: none;
+  }
+
+  .FedEx {
+    width: 25%;
+  }
+
+  .shippingPrice {
+    width: unset;
+  }
+
+  .shippingPrice p {
+    margin-left: 20px;
+  }
+
+  .paymentCard {
+    width: 100%;
+    border-radius: 6px;
+    height: auto;
+    padding: 10px;
+  }
+
+  .paymentFirst,
+  .paymentSecond,
+  .paymentThird,
+  .paymentThird div {
+    margin: 10px 0px;
+  }
+
+  .paymentThird {
+    flex-direction: column;
+  }
+
+  .cardHolder input {
+    width: 100%;
+    border-radius: 4px;
+  }
+
+  .cvc input,
+  .expDate input {
+    width: 100%;
+  }
+
+  .paymentCard input {
+    border-radius: 4px;
+  }
+
+  .addInformation textarea {
+    width: 100% !important;
+  }
+
+  .iAgree {
+    width: 100%;
+    min-height: auto;
+    padding: 8px;
+  }
+
+  #iAgree {
+    width: 100%;
+    min-height: auto;
+    padding: 8px;
+  }
+  .iAgree p {
+    margin-left: 8px;
+  }
+
+  .iAgree input {
+    width: auto !important;
+    height: auto !important;
+  }
+
+  #btn-complete {
+    margin-top: 32px !important;
+    border: 2px solid #46760a;
+    box-sizing: border-box;
+    border-radius: 8px;
+    padding: 12px 40px;
+    cursor: pointer;
+  }
+
+  .checkoutRight {
+    display: none;
+  }
+}

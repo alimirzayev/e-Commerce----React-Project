@@ -71,3 +71,21 @@ footer ul li {
     margin-top: 25px;
   }
 }
+
+@media screen and (min-width: 767px) and (max-width: 1024px) {
+  footer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0px 0px;
+    margin: 16px 0px;
+  }
+
+  .footer1,
+  .footer2,
+  .footer3,
+  .footer4 {
+    margin-top: 25px;
+  }
+}

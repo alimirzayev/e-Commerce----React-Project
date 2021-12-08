@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { Link } from 'react-router-dom';
 import { connect } from 'react-redux'
 
@@ -9,19 +9,19 @@ function WishlistMain(props) {
         <div className="wishlistmain">
             <div className="mainRightCards">
 
-                {JSONDATA.map((val, key) => {
+                {JSONDATA.map((item, key) => {
 
                     return (
                         <div className="mainRightCard1 card" key={key}>
-                            <Link to={`/products/${val.id}`}>
+                            <Link to={`/products/${item.id}`}>
                                 <img className="card-img"
-                                    src={val.img} />
-                                <h3 className="card-title">{val.title}</h3>
-                                <p>{val.desc}</p>
+                                    src={item.img} />
+                                <h3 className="card-title">{item.title}</h3>
+                                <p>{item.desc}</p>
                             </Link>
                             <div className="cardContainer">
-                                <h3 className="card-price">{val.price} USD</h3>
-                                <button id="buynow" className="button" >
+                                <h3 className="card-price">{item.price + " " + "USD"}</h3>
+                                <button id="buynow" className="button">
                                     Add To Cart
                                 </button>
                             </div>

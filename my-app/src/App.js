@@ -11,7 +11,6 @@ import Detail from './Page/Detail';
 import Categorypage from './Page/Categorypage';
 import Blogpage from './Page/Blogpage';
 import Wishlist from './Page/Wishlist';
-import Responsive from './components/Responsive';
 
 function App() {
 
@@ -43,10 +42,6 @@ function App() {
 
         <Route exact path="/blogpage">
           <Blogpage />
-        </Route>
-
-        <Route exact path="/responsive">
-          <Responsive />
         </Route>
 
       </Switch>
