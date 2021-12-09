@@ -3,8 +3,42 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 2%;
 }
 
-.wishlistmain {
-  margin: -5% 10% 5% 10%;
+.wish {
+  transform: translateY(-30px);
+}
+
+.wishlistBtn {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.wish-card,
+.card {
+  height: auto !important;
+}
+
+.wishlistBtn button {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 34px;
+  font-family: "Bold";
+  background: #f5f5f5;
+  box-sizing: border-box;
+  border-radius: 12px;
+  outline: none;
+  border: none;
+  margin-top: 12px;
+  padding: 0px 8px;
+  cursor: pointer;
+}
+
+.wishlistBtn button i {
+  margin-right: 2px;
+  color: rgb(255, 0, 0);
+  padding: 0px 5px;
 }

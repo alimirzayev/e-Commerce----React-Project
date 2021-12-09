@@ -48,19 +48,6 @@ function CategoryRight(props) {
         props.dispatch({ type: "Wishlist", action: cart })
     };
 
-    const removeItem = (item) => {
-
-        let cartCopy = [...cart]
-        console.log(cartCopy, item)
-
-        cartCopy = cartCopy.filter(salam => salam.id !== item.id);
-        console.log(cartCopy)
-        setCart(cartCopy);
-
-        let cartString = JSON.stringify(cartCopy)
-        localStorage.setItem('Eli', cartString)
-    }
-
     // useEffect(() => {
     //     props.dispatch({ type: "Wishlist", action: cart })
     // }, [cart])
@@ -80,9 +67,13 @@ function CategoryRight(props) {
                         </Link>
                         <div className="cardContainer">
                             <h3 className="card-price" >{item.price} USD</h3>
-                            <button id="buynow" className="button"
-                                onClick={() => addItem(item)} > Add to Cart </button>
-                            <button onClick={() => removeItem(item)}>Remove Cart</button>
+                            <button id="buynow" className="button"> Add to Cart </button>
+                        </div>
+                        <div className='wishlistBtn'>
+                            <button onClick={() => addItem(item)}>
+                                <i class="fas fa-heart"></i>
+                                Add to Wishlist
+                            </button>
                         </div>
                     </div>
                 )
