@@ -134,6 +134,7 @@ hr {
   background-image: url(../../assets/img/Group.png);
   background-position: center;
   padding: 50px;
+  z-index: -5;
 }
 
 .mainRightFirst p,

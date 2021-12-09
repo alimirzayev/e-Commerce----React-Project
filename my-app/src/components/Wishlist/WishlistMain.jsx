@@ -7,7 +7,7 @@ function WishlistMain(props) {
     localCart = JSON.parse(localCart)
 
     let [cart, setCart] = useState(localCart);
-    console.log(cart)
+
     const removeItem = (item) => {
 
         let cartCopy = [...cart]
@@ -26,7 +26,7 @@ function WishlistMain(props) {
         <div className="wishlistmain">
             <div style={{ textAlign: "center" }}>
                 <h1>Wishlist</h1>
-                <p>{cart.length} Products at Wishlist</p>
+                <p>{cart.length ? cart.length : 0} Products at Wishlist</p>
             </div>
             <div className="mainRightCards wish">
 

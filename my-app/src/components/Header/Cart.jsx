@@ -12,6 +12,25 @@ function Cart() {
         }
     }
 
+    let localCart = localStorage.getItem("Eli");
+    localCart = JSON.parse(localCart)
+
+    let [cart, setCart] = useState(localCart);
+
+    const removeItem = (item) => {
+
+        let cartCopy = [...cart]
+
+        cartCopy = cartCopy.filter(salam => salam.id != item.id);
+        console.log(item.id);
+
+        setCart(cartCopy);
+
+        let cartString = JSON.stringify(cartCopy)
+        localStorage.setItem('Eli', cartString)
+
+    }
+
     return (
         <div className="mainHeaderRight">
             <div className="mainHeaderUser">
@@ -35,7 +54,7 @@ function Cart() {
                     <path d="M13.8799 3.14993L16.7899 8.28993" stroke="#151515" stroke-width="2.5"
                         stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <div className="mainHeaderBasketCount">
+                <div className="mainHeaderBasketCount1">
                     <span id="count"></span>
                 </div>
             </div>
@@ -47,7 +66,37 @@ function Cart() {
                 </div>
 
                 <div className='shopping-cart-inner'>
+                    {cart && cart.map((item, key) => {
+                        return (
+                            <div className='cart-product-list'>
 
+                                <div className="open-cart-image-div">
+                                    <img src={item.img} alt="" />
+                                </div>
+
+                                <div className='open-cart-title'>
+                                    <p>{item.title}</p>
+                                </div>
+
+                                <div className="open-cart-price">
+                                    <p>{item.price}$</p>
+                                </div>
+
+                                <div className='btn-trash'>
+                                    <i className='fas fa-trash'
+                                        onClick={() => removeItem(item)}
+                                    ></i>
+                                </div>
+
+                            </div>
+                        )
+                    })}
+                </div>
+
+                <div>
+                    <button id="ordernowbtn" >
+                        Order Now
+                    </button>
                 </div>
             </div>
 
