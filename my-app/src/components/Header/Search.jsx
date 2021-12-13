@@ -1,10 +1,12 @@
 import React from 'react'
 import { useState } from 'react';
+import { connect } from 'react-redux';
 import './Header.css';
 import JSONDATA from '../Main/Search.json'
 
-function Search() {
+function Search(props) {
 
+    let JSONDATA = props.dynamicData
     const [searchTerm, setSearchTerm] = useState('')
 
     return (
@@ -54,4 +56,5 @@ function Search() {
     )
 }
 
-export default Search
+let mapStateToProps = state => state
+export default connect(mapStateToProps)(Search)

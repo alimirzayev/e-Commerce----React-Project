@@ -1,4 +1,6 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
+
 import './Header.css';
 
 function Cart() {
@@ -29,6 +31,7 @@ function Cart() {
         let cartString = JSON.stringify(cartCopy)
         localStorage.setItem('Eli', cartString)
 
+        window.location.reload();
     }
 
     return (
@@ -54,8 +57,8 @@ function Cart() {
                     <path d="M13.8799 3.14993L16.7899 8.28993" stroke="#151515" stroke-width="2.5"
                         stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-                <div className="mainHeaderBasketCount1">
-                    <span id="count"></span>
+                <div className="mainHeaderBasketCount">
+                    <span id="count">{cart && cart.length}</span>
                 </div>
             </div>
 
@@ -93,14 +96,17 @@ function Cart() {
                     })}
                 </div>
 
-                <div>
-                    <button id="ordernowbtn" >
-                        Order Now
-                    </button>
-                </div>
-            </div>
 
-        </div>
+                <div>
+                    <a href='/checkout'>
+                        <button id="ordernowbtn">
+                            Order Now
+                        </button>
+                    </a>
+                </div>
+            </div >
+
+        </div >
     )
 }
 

@@ -8,35 +8,35 @@ function Brands() {
             <div>
                 <label>
                     <input type="checkbox" name="" id="" />
-                    Filtre by brand item
+                    Adidas
                 </label>
             </div>
 
             <div>
                 <label>
                     <input type="checkbox" name="" id="" />
-                    Filtre by brand item
+                    Nike
                 </label>
             </div>
 
             <div>
                 <label>
                     <input type="checkbox" name="" id="" />
-                    Filtre by brand item
+                    Puma
                 </label>
             </div>
 
             <div>
                 <label>
                     <input type="checkbox" name="" id="" />
-                    Filtre by brand item
+                    Jordan
                 </label>
             </div>
 
             <div>
                 <label>
                     <input type="checkbox" name="" id="" />
-                    Filtre by brand item
+                    Converse
                 </label>
             </div>
         </div>

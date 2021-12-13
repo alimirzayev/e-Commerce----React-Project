@@ -1,28 +1,21 @@
 import React, { useState, useEffect } from 'react'
 
 function CheckoutRight() {
-
     let localCart = localStorage.getItem("Eli");
     localCart = JSON.parse(localCart)
 
     let [cart, setCart] = useState(localCart);
 
-    const removeItem = (item) => {
+    const [total, setTotal] = useState(0)
 
-        let cartCopy = [...cart]
+    useEffect(() => {
+        setTotal(
+            cart.reduce(function (prev, cur) {
+                return prev + cur.price * cur.quantity;
+            }, 0))
+    }, [])
 
-        cartCopy = cartCopy.filter(salam => salam.id != item.id);
-        console.log(item.id);
-
-        setCart(cartCopy);
-
-        let cartString = JSON.stringify(cartCopy)
-        localStorage.setItem('Eli', cartString)
-    }
-
-
-
-    const addItem = (item) => {
+    const addQty = (item) => {
         let cartCopy = [...cart];
 
         let { id } = item;
@@ -31,9 +24,7 @@ function CheckoutRight() {
 
         if (existingItem) {
             existingItem.quantity += 1;
-        } else {
-            item.quantity = 1;
-            cartCopy.push(item);
+            setTotal(total + item.price)
         }
 
         setCart(cartCopy);
@@ -52,10 +43,55 @@ function CheckoutRight() {
         };
 
         let stringCart = JSON.stringify(cartCopy, replacerFunc());
-        localStorage.setItem("Quantity", stringCart);
-    };
+        localStorage.setItem("Eli", stringCart);
+
+    }
+
+    const delQty = (item) => {
+        let cartCopy = [...cart];
+
+        let { id } = item;
+
+        let existingItem = cartCopy.find((cartItem) => cartItem.id === id);
 
 
+        if (existingItem) {
+            existingItem.quantity -= 1;
+            setTotal(total - item.price)
+        }
+
+        setCart(cartCopy);
+
+        const replacerFunc = () => {
+            const visited = new WeakSet();
+            return (key, value) => {
+                if (typeof value === "object" && value !== null) {
+                    if (visited.has(value)) {
+                        return;
+                    }
+                    visited.add(value);
+                }
+                return value;
+            };
+        };
+
+        let stringCart = JSON.stringify(cartCopy, replacerFunc());
+        localStorage.setItem("Eli", stringCart);
+    }
+
+    const removeItem = (item) => {
+
+        let cartCopy = [...cart]
+
+        cartCopy = cartCopy.filter(salam => salam.id != item.id);;
+
+        setCart(cartCopy);
+
+        let cartString = JSON.stringify(cartCopy)
+        localStorage.setItem('Eli', cartString)
+
+        window.location.reload()
+    }
 
     return (
         <div className="checkoutRight">
@@ -71,7 +107,7 @@ function CheckoutRight() {
                 <div className="cartProduct" key={item.id}>
                     <div className="cartProductLeft">
                         <div className="cartProductImage">
-                            <img onClick={() => addItem(item)} src={item.img} alt="" />
+                            <img src={item.img} alt="" />
                         </div>
                         <p id="remove-btn" onClick={() => removeItem(item)}> <i class="fas fa-times"></i> Remove</p>
                     </div>
@@ -90,16 +126,16 @@ function CheckoutRight() {
                     </div>
 
                     <div className="cartProductEnd">
-                        <button>-</button>
+                        <button onClick={() => delQty(item)}>-</button>
 
-                        <button>+</button>
+                        <button onClick={() => addQty(item)}>+</button>
                     </div>
                 </div>
             ))
             }
 
             <div className="cartTotal">
-                <h2>Total Order <br />{ } <span>$</span></h2>
+                <h2>Total Order <br />{parseFloat(total).toFixed(2)} <span>$</span></h2>
             </div>
 
             <div className="removeAll">

@@ -45,12 +45,7 @@ function CategoryRight(props) {
 
         let stringCart = JSON.stringify(cartCopy, replacerFunc());
         localStorage.setItem("Eli", stringCart);
-        props.dispatch({ type: "Wishlist", action: cart })
     };
-
-    // useEffect(() => {
-    //     props.dispatch({ type: "Wishlist", action: cart })
-    // }, [cart])
 
     return (
         <div className="categoryRight">
@@ -67,10 +62,10 @@ function CategoryRight(props) {
                         </Link>
                         <div className="cardContainer">
                             <h3 className="card-price" >{item.price} USD</h3>
-                            <button id="buynow" className="button"> Add to Cart </button>
+                            <button id="buynow" className="button" onClick={() => addItem(item)}> Add to Cart </button>
                         </div>
                         <div className='wishlistBtn'>
-                            <button onClick={() => addItem(item)}>
+                            <button>
                                 <i class="fas fa-heart"></i>
                                 Add to Wishlist
                             </button>

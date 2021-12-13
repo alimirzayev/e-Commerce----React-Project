@@ -1,9 +1,9 @@
 [
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/xproduct-8.jpg.pagespeed.ic.eAtHbtNqMI.webp",
-    "title": "Fruit Juice",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/8_b_600x.jpg?v=1592963866",
+    "title": "Shoes 1",
     "desc": "Space for a small product description",
-    "price": 3.5,
+    "price": 23.5,
     "id": 1,
     "img2": "",
     "img3": "",
@@ -19,10 +19,10 @@
     "rating": 4.5
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/xproduct-1.jpg.pagespeed.ic.dWctTko08F.webp",
-    "title": "Bell Pepper",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/5_b_600x.jpg?v=1593071537",
+    "title": "Shoes 2",
     "desc": "Space for a small product description",
-    "price": 1.0,
+    "price": 33.9,
     "id": 2,
     "img1": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/sweet-pepper-colorful-sweet-bell-peppers-natural-royalty-free-image-1611355757.",
     "img2": "https://snaped.fns.usda.gov/sites/default/files/seasonal-produce/2018-05/bell%20peppers.jpg",
@@ -39,10 +39,10 @@
     "rating": 2.5
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/xproduct-2.jpg.pagespeed.ic.2q3x49cb1q.webp",
-    "title": "Strawberry",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/2_b_425x.jpg?v=1593049248",
+    "title": "Shoes 3",
     "desc": "Space for a small product description",
-    "price": 3.0,
+    "price": 18.6,
     "id": 3,
     "img2": "",
     "img3": "",
@@ -58,10 +58,10 @@
     "rating": 3.5
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/xproduct-6.jpg.pagespeed.ic.bV2cvmi8jU.webp",
-    "title": "Brocoli",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/12_b_600x.jpg?v=1592964220",
+    "title": "Shoes 4",
     "desc": "Space for a small product description",
-    "price": 1.49,
+    "price": 21.49,
     "id": 4,
     "img2": "",
     "img3": "",
@@ -77,10 +77,10 @@
     "rating": 5
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/xproduct-5.jpg.pagespeed.ic.ZbzeN2jASE.webp",
-    "title": "Tomatoe",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/9_b_600x.jpg?v=1592964272",
+    "title": "Shoes 5",
     "desc": "Space for a small product description",
-    "price": 0.79,
+    "price": 66.79,
     "id": 5,
     "img2": "",
     "img3": "",
@@ -96,10 +96,10 @@
     "rating": 1
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/xproduct-4.jpg.pagespeed.ic.-zi4uKxOWe.webp",
-    "title": "Cabbage",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/4_b_600x.jpg?v=1592963172",
+    "title": "Shoes 6",
     "desc": "Space for a small product description",
-    "price": 2.09,
+    "price": 54.09,
     "id": 6,
     "img2": "",
     "img3": "",
@@ -115,10 +115,10 @@
     "rating": 4
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/product-10.jpg.webp",
-    "title": "Apple",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/7_b_600x.jpg?v=1592963729",
+    "title": "Shoes 7",
     "desc": "Space for a small product description",
-    "price": 3.48,
+    "price": 83.48,
     "id": 7,
     "img1": "https://s.hdnux.com/photos/04/46/02/1204392/3/1200x0.jpg",
     "img2": "https://ichef.bbci.co.uk/news/976/cpsprodpb/9E86/production/_109228504_apples1.jpg",
@@ -136,10 +136,10 @@
     "rating": 3
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/product-11.jpg.webp",
-    "title": "Garlic",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/6_b_600x.jpg?v=1593059811",
+    "title": "Shoes 8",
     "desc": "Space for a small product description",
-    "price": 0.48,
+    "price": 40.48,
     "id": 8,
     "img2": "",
     "img3": "",
@@ -155,10 +155,10 @@
     "rating": 4
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/product-9.jpg.webp",
-    "title": "Onion",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/11_b_600x.jpg?v=1592964243",
+    "title": "Shoes 9",
     "desc": "Space for a small product description",
-    "price": 1.49,
+    "price": 71.49,
     "id": 9,
     "img2": "",
     "img3": "",
@@ -174,10 +174,10 @@
     "rating": 4
   },
   {
-    "img": "https://preview.colorlib.com/theme/vegefoods/images/product-12.jpg.webp",
-    "title": "Chilli",
+    "img": "https://cdn.shopify.com/s/files/1/0417/7710/3008/products/3_b_425x.jpg?v=1592962836",
+    "title": "Shoes 10",
     "desc": "Space for a small product description",
-    "price": 1.99,
+    "price": 61.99,
     "id": 10,
     "img2": "",
     "img3": "",

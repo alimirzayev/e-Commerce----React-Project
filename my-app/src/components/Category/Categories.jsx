@@ -5,22 +5,22 @@ function Categories() {
         <div className="categories">
             <h2>Categories</h2>
             <div>
-                <p>Category name</p>
+                <p>Running Shoes</p>
                 <span>320</span>
             </div>
 
             <div>
-                <p>Category name</p>
+                <p>Men Shoes</p>
                 <span>112</span>
             </div>
 
             <div>
-                <p>Category name</p>
+                <p>Women Shoes</p>
                 <span>32</span>
             </div>
 
             <div>
-                <p>Category name</p>
+                <p>Mixed Shoes</p>
                 <span>48</span>
             </div>
         </div>
