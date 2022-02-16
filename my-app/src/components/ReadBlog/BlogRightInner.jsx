@@ -1,19 +1,19 @@
 import React from 'react'
 
-function BlogRightInner({detail}) {
+function BlogRightInner({ detail }) {
     return (
         <div>
-            
-            <div class="readOurFirst">
 
-                    <div class="readOurFirstLeft">
-                        <h5>{detail.title}</h5>
-                        <pre>{detail.author}   {detail.date}</pre>
-                    </div>
+            <div className="readOurFirst">
 
-                    <div class="readOurFirstRight">
-                        <img src={detail.img} alt=""/>
-                    </div>
+                <div className="readOurFirstLeft">
+                    <h5>{detail.title}</h5>
+                    <pre>{detail.author}   {detail.date}</pre>
+                </div>
+
+                <div className="readOurFirstRight">
+                    <img src={detail.img} alt="" />
+                </div>
 
             </div>
 
@@ -29,28 +29,28 @@ function BlogRightInner({detail}) {
 
 
 
-{/* 
-                <div class="readOurSecond">
+            {/* 
+                <div className="readOurSecond">
 
-                    <div class="readOurSecondLeft">
+                    <div className="readOurSecondLeft">
                         <h5>Our chef tips for a great and <br/> healthy breakfast</h5>
                         <pre>Author   14.1.2020</pre>
                     </div>
 
-                    <div class="readOurSecondRight">
+                    <div className="readOurSecondRight">
                         <img src="https://technext.github.io/vegefoods/images/image_6.jpg" alt=""/>
                     </div>
 
                 </div>
 
-                <div class="readOurThird">
+                <div className="readOurThird">
 
-                    <div class="readOurThirdLeft">
+                    <div className="readOurThirdLeft">
                         <h5>Prepare a simple and delicious breads</h5>
                         <pre>Author   14.1.2020</pre>
                     </div>
 
-                    <div class="readOurThirdRight">
+                    <div className="readOurThirdRight">
                         <img src="https://technext.github.io/vegefoods/images/image_5.jpg" alt=""/>
                     </div>
 

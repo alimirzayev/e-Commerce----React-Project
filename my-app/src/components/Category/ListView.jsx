@@ -70,7 +70,7 @@ function ListView(props) {
                             <div>
                                 <button>Product Detail</button> <br />
                                 <button>
-                                    <i class="far fa-heart"></i>
+                                    <i className="far fa-heart"></i>
                                     <p>Add to wish list</p>
                                 </button>
                             </div>

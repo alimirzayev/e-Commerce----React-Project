@@ -1,6 +1,6 @@
-import React, { useEffect, useRef } from 'react'
+import React, { useRef } from 'react'
 import './Header.css';
-
+import { Link } from 'react-router-dom'
 import { gsap } from "gsap";
 
 
@@ -47,16 +47,16 @@ function Logo() {
 
             <div ref={hamburger} id="hamburger">
                 <ul>
-                    <li><a href="">Bakery</a></li>
-                    <li><a href="">Fruit and vegetables</a></li>
-                    <li><a href="">Meat and fish</a></li>
-                    <li><a href="">Drinks</a></li>
-                    <li><a href="">Kitchen</a></li>
-                    <li><a href="">Special nutrition</a></li>
-                    <li><a href="">Baby</a></li>
-                    <li><a href="">Pharmacy</a></li>
+                    <li><Link to="">Bakery</Link></li>
+                    <li><Link to="">Fruit and vegetables</Link></li>
+                    <li><Link to="">Meat and fish</Link></li>
+                    <li><Link to="">Drinks</Link></li>
+                    <li><Link to="">Kitchen</Link></li>
+                    <li><Link to="">Special nutrition</Link></li>
+                    <li><Link to="">Baby</Link></li>
+                    <li><Link to="">Pharmacy</Link></li>
                 </ul>
-                <hr classNameName="hrReact" />
+                <hr className="hrReact" />
             </div>
 
             <svg width="177" height="18" viewBox="0 0 177 18" fill="none" xmlns="http://www.w3.org/2000/svg">

@@ -1,19 +1,19 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function MainLeftBest() {
     return (
         <div className="mainLeftBest">
-                <h4>Best From Farmers</h4>
-                <ul>
-                    <li><a href="">Bakery</a></li>
-                    <li><a href="">Fruit and Vegetables</a></li>
-                    <li><a href="">Meat and Fish</a></li>
-                    <li><a href="">Drinks</a></li>
-                    <li><a href="">Kitchen</a></li>
-                    <li><a href="">Pharmacy</a></li>
-                </ul>
-                <button>More Categories <i className="fas fa-angle-right"></i></button>
-            </div>
+            <h4>Best From Farmers</h4>
+            <ul>
+                <li><Link to="">Bakery</Link></li>
+                <li><Link to="">Fruit and Vegetables</Link></li>
+                <li><Link to="">Meat and Fish</Link></li>
+                <li><Link to="">Drinks</Link></li>
+                <li><Link to="">Kitchen</Link></li>
+                <li><Link to="">Pharmacy</Link></li>
+            </ul>
+            <button>More Categories <i className="fas fa-angle-right"></i></button>
+        </div>
     )
 }
 
