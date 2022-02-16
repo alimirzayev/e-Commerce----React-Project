@@ -21,7 +21,7 @@ function Description() {
                 <h4>Full of Vitamins!</h4>
 
                 <div>
-                    <table class="wp-table">
+                    <table className="wp-table">
                         <tr>
                             <th>Vitamins</th>
                             <th>Quantity</th>

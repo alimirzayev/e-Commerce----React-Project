@@ -1,17 +1,17 @@
 import React from 'react'
-
+import { Link } from 'react-router-dom'
 function MainLeftSelling() {
     return (
-        <div>
+        <div className='mainLeftBSellll'>
             <div className="mainLeftBSell">
                 <h4>Best Selling Products</h4>
                 <ul>
-                    <li><a href="">Bakery</a></li>
-                    <li><a href="">Fruit and Vegetables</a></li>
-                    <li><a href="">Meat and Fish</a></li>
-                    <li><a href="">Drinks</a></li>
-                    <li><a href="">Kitchen</a></li>
-                    <li><a href="">Special nutrition</a></li>
+                    <li><Link to="">Bakery</Link></li>
+                    <li><Link to="">Fruit and Vegetables</Link></li>
+                    <li><Link to="">Meat and Fish</Link></li>
+                    <li><Link to="">Drinks</Link></li>
+                    <li><Link to="">Kitchen</Link></li>
+                    <li><Link to="">Special nutrition</Link></li>
                 </ul>
                 <button>More Categories <i className="fas fa-angle-right"></i></button>
             </div>

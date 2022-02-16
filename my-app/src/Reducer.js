@@ -64,7 +64,6 @@ export default function Reducer(state = initalState, action) {
             break
 
         case "Wishlist":
-            console.log(action);
             return { ...state, wishlistData: action.action }
             break
     }

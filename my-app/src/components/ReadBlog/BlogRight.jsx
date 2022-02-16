@@ -25,7 +25,7 @@ function BlogRight() {
     }
 
     return (
-        <div class="readOurBlog3">
+        <div className="readOurBlog3">
 
             <BlogRightInner detail={first} />
             <BlogRightInner detail={second} />

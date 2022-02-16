@@ -2,11 +2,9 @@ import React, { useRef } from 'react'
 import './Section.css'
 import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
-
 function Sec(props) {
 
     let JSONDATA = props.data
-    console.log(props.wishlist);
 
     const imageSrc = useRef()
 
@@ -25,7 +23,7 @@ function Sec(props) {
             <div className="sectionHeading">
 
                 <h3>Section Headline</h3>
-                <a >Button <i className="fas fa-angle-right"></i></a>
+                <Link to="">Button <i className="fas fa-angle-right"></i></Link>
 
             </div>
 

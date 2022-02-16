@@ -1,121 +1,122 @@
 import React from 'react'
 import './Header.css';
+import { Link } from 'react-router-dom'
 
 function Category() {
     return (
         <nav className="navbar">
             <ul>
-                <li className="dropdown"><a href="">Bakery
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Bread</a></li>
-                                <li><a href="">Cake</a></li>
-                                <li><a href="">Biscuits</a></li>
-                                <li><a href="">Bagets</a></li>
-                                <li><a href="">Muffins</a></li>
-                            </ul>
-                        </div>
+                <li className="dropdown"><Link to="">Bakery
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Bread</Link></li>
+                            <li><Link to="">Cake</Link></li>
+                            <li><Link to="">Biscuits</Link></li>
+                            <li><Link to="">Bagets</Link></li>
+                            <li><Link to="">Muffins</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
 
-                <li className="dropdown"><a href="">Fruit and Vegetables
+                <li className="dropdown"><Link to="">Fruit and Vegetables
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Banana</a></li>
-                                <li><a href="">Cheery</a></li>
-                                <li><a href="">Lemon</a></li>
-                                <li><a href="">Vegetables</a></li>
-                            </ul>
-                        </div>
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Apple</Link></li>
+                            <li><Link to="">Banana</Link></li>
+                            <li><Link to="">Cheery</Link></li>
+                            <li><Link to="">Lemon</Link></li>
+                            <li><Link to="">Vegetables</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
 
-                <li className="dropdown"><a href="">Meat and fish
+                <li className="dropdown"><Link to="">Meat and fish
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Beef</a></li>
-                                <li><a href="">Goat</a></li>
-                                <li><a href="">Lamb</a></li>
-                                <li><a href="">Pork</a></li>
-                                <li><a href="">Fishs</a></li>
-                            </ul>
-                        </div>
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Beef</Link></li>
+                            <li><Link to="">Goat</Link></li>
+                            <li><Link to="">Lamb</Link></li>
+                            <li><Link to="">Pork</Link></li>
+                            <li><Link to="">Fishs</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
 
-                <li className="dropdown"><a href="">Drinks
+                <li className="dropdown"><Link to="">Drinks
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Water</a></li>
-                                <li><a href="">Milk</a></li>
-                                <li><a href="">Juice</a></li>
-                                <li><a href="">Beer</a></li>
-                                <li><a href="">Wine</a></li>
-                                <li><a href="">Soft Drinks</a></li>
-                                <li><a href="">Juice Drinks</a></li>
-                            </ul>
-                        </div>
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Water</Link></li>
+                            <li><Link to="">Milk</Link></li>
+                            <li><Link to="">Juice</Link></li>
+                            <li><Link to="">Beer</Link></li>
+                            <li><Link to="">Wine</Link></li>
+                            <li><Link to="">Soft Drinks</Link></li>
+                            <li><Link to="">Juice Drinks</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
 
-                <li className="dropdown"><a href="">Kitchen
+                <li className="dropdown"><Link to="">Kitchen
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Pizza</a></li>
-                                <li><a href="">Hamburger</a></li>
-                                <li><a href="">Pancake</a></li>
-                                <li><a href="">Sauces</a></li>
-                            </ul>
-                        </div>
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Pizza</Link></li>
+                            <li><Link to="">Hamburger</Link></li>
+                            <li><Link to="">Pancake</Link></li>
+                            <li><Link to="">Sauces</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
 
-                <li className="dropdown"><a href="">Special nutrition
+                <li className="dropdown"><Link to="">Special nutrition
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Dark Green Vegetables</a></li>
-                                <li><a href="">Berries</a></li>
-                                <li><a href="">Seaweed</a></li>
-                                <li><a href="">Salmon</a></li>
-                                <li><a href="">Potatoes</a></li>
-                            </ul>
-                        </div>
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Dark Green Vegetables</Link></li>
+                            <li><Link to="">Berries</Link></li>
+                            <li><Link to="">Seaweed</Link></li>
+                            <li><Link to="">Salmon</Link></li>
+                            <li><Link to="">Potatoes</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
 
-                <li className="dropdown"><a href="">Baby
+                <li className="dropdown"><Link to="">Baby
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Beech-Nut</a></li>
-                                <li><a href="">Cerebelly</a></li>
-                                <li><a href="">Nutella</a></li>
-                                <li><a href="">Baby Gourmet</a></li>
-                                <li><a href="">Sprout</a></li>
-                            </ul>
-                        </div>
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Beech-Nut</Link></li>
+                            <li><Link to="">Cerebelly</Link></li>
+                            <li><Link to="">Nutella</Link></li>
+                            <li><Link to="">Baby Gourmet</Link></li>
+                            <li><Link to="">Sprout</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
 
-                <li className="dropdown"><a href="">Pharmacy
+                <li className="dropdown"><Link to="">Pharmacy
 
-                        <div className="dropdown-content end">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Beech-Nut</a></li>
-                                <li><a href="">Cerebelly</a></li>
-                                <li><a href="">Nutella</a></li>
-                                <li><a href="">Baby Gourmet</a></li>
-                                <li><a href="">Sprout</a></li>
-                            </ul>
-                        </div>
+                    <div className="dropdown-content end">
+                        <ul className="dropdown-ul">
+                            <li><Link to="">Beech-Nut</Link></li>
+                            <li><Link to="">Cerebelly</Link></li>
+                            <li><Link to="">Nutella</Link></li>
+                            <li><Link to="">Baby Gourmet</Link></li>
+                            <li><Link to="">Sprout</Link></li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </Link></li>
             </ul>
         </nav>
     )

@@ -66,7 +66,7 @@ function CategoryRight(props) {
                         </div>
                         <div className='wishlistBtn'>
                             <button>
-                                <i class="fas fa-heart"></i>
+                                <i className="fas fa-heart"></i>
                                 Add to Wishlist
                             </button>
                         </div>
