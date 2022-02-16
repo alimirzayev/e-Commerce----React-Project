@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { useParams } from 'react-router';
-import JSONDATA from '../Main/Search.json'
-import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
+import { connect } from 'react-redux'
 import Rating from '@mui/material/Rating';
 
-function DetailDesc() {
+function DetailDesc(props) {
+    let JSONDATA = props.data
 
     const [value, setValue] = useState(4);
 
@@ -152,4 +152,5 @@ function DetailDesc() {
     )
 }
 
-export default DetailDesc
+const mapStateToProps = state => state
+export default connect(mapStateToProps)(DetailDesc)

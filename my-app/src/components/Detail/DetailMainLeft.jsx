@@ -1,10 +1,9 @@
 import { React } from 'react'
 import { useParams } from 'react-router';
-import { Fancybox } from "@fancyapps/ui/src/Fancybox/Fancybox.js";
-import JSONDATA from '../Main/Search.json'
+import { connect } from 'react-redux'
 
-function DetailMainLeft() {
-
+function DetailMainLeft(props) {
+    let JSONDATA = props.data
     let { id } = useParams()
 
     const item = JSONDATA.filter(item => item.id == id)
@@ -42,4 +41,5 @@ function DetailMainLeft() {
     )
 }
 
-export default DetailMainLeft
+const mapStateToProps = state => state
+export default connect(mapStateToProps)(DetailMainLeft)
