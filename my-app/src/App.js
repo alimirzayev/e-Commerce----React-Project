@@ -1,8 +1,6 @@
-import './App.css';
-import React from 'react';
-
+import React, { Fragment, Suspense, useEffect } from 'react';
 import { BrowserRouter as Switch, Route } from 'react-router-dom';
-
+import './App.css';
 import Header from './components/Header/Header'
 import Footer from './components/Footer/Footer';
 import Home from './Page/Home';
@@ -14,40 +12,47 @@ import Wishlist from './Page/Wishlist';
 
 function App() {
 
+  useEffect(() => {
+    console.warn = () => { };
+  }, [])
+
+
   return (
-    <div className="App">
-      <Header />
+    <Fragment>
+      <Suspense fallback={"SALAMMMMMMMMMMMMMMMMMMMMMMMMMMM"}>
+        <Header />
 
-      <Switch>
+        <Switch>
 
-        <Route exact path="/">
-          <Home />
-        </Route>
+          <Route exact path="/">
+            <Home />
+          </Route>
 
-        <Route path="/checkout">
-          <Checkout />
-        </Route>
+          <Route path="/checkout">
+            <Checkout />
+          </Route>
 
-        <Route exact path="/products/:id">
-          <Detail />
-        </Route>
+          <Route exact path="/products/:id">
+            <Detail />
+          </Route>
 
-        <Route exact path="/category">
-          <Categorypage />
-        </Route>
+          <Route exact path="/category">
+            <Categorypage />
+          </Route>
 
-        <Route exact path="/wishlist">
-          <Wishlist />
-        </Route>
+          <Route exact path="/wishlist">
+            <Wishlist />
+          </Route>
 
-        <Route exact path="/blogpage">
-          <Blogpage />
-        </Route>
+          <Route exact path="/blogpage">
+            <Blogpage />
+          </Route>
 
-      </Switch>
+        </Switch>
 
-      <Footer />
-    </div >
+        <Footer />
+      </Suspense>
+    </Fragment>
   );
 }
 

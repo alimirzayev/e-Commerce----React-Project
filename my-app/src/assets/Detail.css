@@ -1,4 +1,6 @@
 .detail {
+  position: relative;
+  z-index: -5;
   transform: translateY(-35px);
 }
 

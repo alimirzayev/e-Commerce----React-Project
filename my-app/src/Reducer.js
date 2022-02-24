@@ -4,6 +4,8 @@ const initalState = {
     data: JSONDATA,
     dynamicData: JSONDATA,
     wishlistData: [],
+    blur: false,
+    toggle: false,
 }
 
 export default function Reducer(state = initalState, action) {
@@ -65,6 +67,15 @@ export default function Reducer(state = initalState, action) {
 
         case "Wishlist":
             return { ...state, wishlistData: action.action }
+            break
+
+        case "BLUR":
+            return { ...state, blur: action.value }
+            break
+
+        case "OPENMENU":
+            console.log(action.value);
+            return { ...state, toggle: action.value }
             break
     }
     return state

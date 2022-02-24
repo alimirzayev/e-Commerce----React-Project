@@ -133,13 +133,13 @@ hr {
   top: 18%;
   right: 0;
   background-color: whitesmoke;
-  z-index: 100;
   padding: 10px;
   border: 1px solid #d1d1d1;
   border-radius: 15px;
   flex-direction: column;
   justify-content: space-between;
   overflow-y: scroll;
+  transition: 0.2s ease-in;
 }
 
 .active {
@@ -337,7 +337,7 @@ nav ul {
 
 #hamburger {
   display: none;
-  z-index: 9000;
+  z-index: 1000 !important;
 }
 
 .searchDrop {
@@ -413,7 +413,7 @@ nav ul {
     width: 100vw !important;
     height: 91.75vh !important;
     background-color: rgba(0, 0, 0, 0.856) !important;
-    z-index: 9000;
+    z-index: 1000 !important;
 
     color: white;
     font-family: "Semi-Bold";
@@ -535,7 +535,7 @@ nav ul {
     width: 100vw !important;
     height: 91.75vh !important;
     background-color: rgba(0, 0, 0, 0.856) !important;
-    z-index: 9000;
+    z-index: 1000 !important;
 
     color: white;
     font-family: "Semi-Bold";
@@ -657,7 +657,7 @@ nav ul {
     width: 100vw !important;
     height: 91.75vh !important;
     background-color: rgba(0, 0, 0, 0.856) !important;
-    z-index: 9000;
+    z-index: 1000 !important;
 
     color: white;
     font-family: "Semi-Bold";
@@ -779,7 +779,7 @@ nav ul {
     width: 100vw !important;
     height: 91.75vh !important;
     background-color: rgba(0, 0, 0, 0.856) !important;
-    z-index: 9000;
+    z-index: 1000 !important;
 
     color: white;
     font-family: "Semi-Bold";

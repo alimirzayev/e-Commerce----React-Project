@@ -1,15 +1,19 @@
 import React, { useState } from 'react'
 import './Header.css';
 import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-function Cart() {
+
+function Cart(props) {
     const [display, setDisplay] = useState(true)
 
     const showCart = () => {
         if (display) {
             setDisplay(false)
+            props.dispatch({ type: "BLUR", value: display })
         } else {
             setDisplay(true)
+            props.dispatch({ type: "BLUR", value: display })
         }
     }
 
@@ -31,6 +35,7 @@ function Cart() {
 
         window.location.reload();
     }
+
 
     return (
         <div className="mainHeaderRight">
@@ -108,4 +113,5 @@ function Cart() {
     )
 }
 
-export default Cart
+let mapStateToProps = state => state
+export default connect(mapStateToProps)(Cart)
