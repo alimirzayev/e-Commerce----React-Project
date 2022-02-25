@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 import Main from '../components/Main/Main'
 import Testimonial from '../components/Testimonial/Testimonial';
@@ -7,13 +7,13 @@ import Sec from '../components/Section-Headline/Sec';
 
 function Home() {
     return (
-        <div>
+        <Fragment>
             <Main />
             <Testimonial />
             <hr />
             <Sec />
             <ReadBlog />
-        </div>
+        </Fragment>
     )
 }
 

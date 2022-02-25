@@ -1,12 +1,12 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import './Header.css';
 import Category from './Category';
 
 function HeadingBottom() {
     return (
-        <div>
+        <Fragment>
             <Category />
-        </div>
+        </Fragment>
     )
 }
 

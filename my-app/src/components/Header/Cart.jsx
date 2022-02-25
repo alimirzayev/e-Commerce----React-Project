@@ -101,7 +101,7 @@ function Cart(props) {
 
 
                 <div>
-                    <Link to='/checkout'>
+                    <Link to="/checkout">
                         <button id="ordernowbtn">
                             Order Now
                         </button>

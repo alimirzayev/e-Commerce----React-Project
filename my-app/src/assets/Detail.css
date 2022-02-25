@@ -1,7 +1,6 @@
 .detail {
   position: relative;
-  z-index: -5;
-  transform: translateY(-35px);
+  z-index: 1;
 }
 
 .detailMain {
@@ -399,7 +398,7 @@
 }
 
 @media screen and (min-width: 370px) and (max-width: 414px) {
-  .detailReview p {
+  .d etailReview p {
     margin-top: -7px;
   }
 
@@ -513,7 +512,7 @@
 }
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
-  .detailReview p {
+  .d etailReview p {
     margin-top: -2px;
   }
 
@@ -620,7 +619,7 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  .detailReview p {
+  .d etailReview p {
     margin-top: -2px;
   }
 

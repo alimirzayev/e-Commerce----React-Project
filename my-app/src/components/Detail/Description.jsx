@@ -22,19 +22,23 @@ function Description() {
 
                 <div>
                     <table className="wp-table">
-                        <tr>
-                            <th>Vitamins</th>
-                            <th>Quantity</th>
-                            <th>% DV</th>
-                        </tr>
-
-                        {Vitamin.map(vitamins => (
-                            <tr key={vitamins.id}>
-                                <td>{vitamins.vitaminame}</td>
-                                <td>{vitamins.quantity}</td>
-                                <td>{vitamins.dv}</td>
+                        <thead>
+                            <tr>
+                                <th>Vitamins</th>
+                                <th>Quantity</th>
+                                <th>% DV</th>
                             </tr>
-                        ))}
+                        </thead>
+
+                        <tbody>
+                            {Vitamin.map(vitamins => (
+                                <tr key={vitamins.id}>
+                                    <td>{vitamins.vitaminame}</td>
+                                    <td>{vitamins.quantity}</td>
+                                    <td>{vitamins.dv}</td>
+                                </tr>
+                            ))}
+                        </tbody>
                     </table>
                 </div>
             </div>

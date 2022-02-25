@@ -12,23 +12,18 @@ import Wishlist from './Page/Wishlist';
 
 function App() {
 
-  useEffect(() => {
-    console.warn = () => { };
-  }, [])
-
-
   return (
     <Fragment>
-      <Suspense fallback={"SALAMMMMMMMMMMMMMMMMMMMMMMMMMMM"}>
+      <Suspense>
         <Header />
 
         <Switch>
 
-          <Route exact path="/">
+          <Route exact path="/home">
             <Home />
           </Route>
 
-          <Route path="/checkout">
+          <Route exact path="/checkout">
             <Checkout />
           </Route>
 
