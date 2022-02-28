@@ -184,7 +184,7 @@ hr {
 
 .mainRightCard1 {
   width: 269px;
-  height: 323px;
+  height: fit-content !important;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
   border-radius: 12px;

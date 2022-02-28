@@ -49,19 +49,19 @@ function Logo(props) {
 
             <div ref={hamburger} id="hamburger">
                 <ul>
-                    <li><Link to="">Bakery</Link></li>
-                    <li><Link to="">Fruit and vegetables</Link></li>
-                    <li><Link to="">Meat and fish</Link></li>
-                    <li><Link to="">Drinks</Link></li>
-                    <li><Link to="">Kitchen</Link></li>
-                    <li><Link to="">Special nutrition</Link></li>
-                    <li><Link to="">Baby</Link></li>
-                    <li><Link to="">Pharmacy</Link></li>
+                    <li><Link to="/category">Bakery</Link></li>
+                    <li><Link to="/category">Fruit and vegetables</Link></li>
+                    <li><Link to="/category">Meat and fish</Link></li>
+                    <li><Link to="/category">Drinks</Link></li>
+                    <li><Link to="/category">Kitchen</Link></li>
+                    <li><Link to="/category">Special nutrition</Link></li>
+                    <li><Link to="/category">Baby</Link></li>
+                    <li><Link to="/category">Pharmacy</Link></li>
                 </ul>
                 <hr className="hrReact" />
             </div>
 
-            <Link to="/home">
+            <Link to="/">
                 <svg width="177" height="18" viewBox="0 0 177 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M3.87168 10.7609H10.4051V7.23913H3.87168V3.52174H11.857V0H0V17.6087H3.87168V10.7609Z"
                         fill="#151515" />

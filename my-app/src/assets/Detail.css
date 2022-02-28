@@ -302,6 +302,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
@@ -416,6 +417,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
@@ -530,6 +532,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
@@ -637,6 +640,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
