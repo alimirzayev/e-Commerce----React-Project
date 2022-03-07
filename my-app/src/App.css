@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 .sliderContainer {
   padding: 0 40px;
 }
@@ -5,6 +9,10 @@
 @media screen and (min-width: 320px) and (max-width: 1024px) {
   .sliderContainer {
     padding: 0 0;
+  }
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    font-size: 30px !important;
   }
 }
 

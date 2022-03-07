@@ -1,0 +1,69 @@
+.BlogPageLeft{
+    width: 21%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    height: 100%;
+}
+
+.blogArchives,
+.blogCategory,
+.blogJoin{
+    width: 85%;
+    height: 33%;
+}
+
+.blogArchives h3,
+.blogCategory h3,
+.blogJoin h3{
+    font-family: "Bold";
+    margin-bottom: 16px;
+    margin-top: 48px;
+}
+
+.blogArchivesDetail p,
+.blogCategoryDetail p{
+    font-family: "Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    text-decoration-line: underline;
+    color: #6A983C;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    margin: 12px 0px;
+}
+
+.blogJoinDetail p{
+font-family: "Medium";
+font-style: normal;
+font-weight: normal;
+font-size: 14px;
+line-height: 19px;
+color: #A9A9A9;
+flex: none;
+order: 1;
+align-self: center;
+flex-grow: 0;
+margin: 8px 0px;
+}
+
+.blogJoinButton input{
+    width: 100%;
+    background: #F9F9F9;/* C1/D */
+    height: 42px;
+    border: 1px solid #D1D1D1;
+    box-sizing: border-box;
+    border-radius: 12px;
+    outline: none;
+    padding: 11px 21px;
+    font-family: "Medium";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 19px;
+    color: #A9A9A9;
+
+}

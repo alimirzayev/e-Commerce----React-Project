@@ -5,7 +5,7 @@ function Breadcrumb() {
     return (
         <div className="bread">
             <ul className="breadcrumb">
-                <li><Link to="#" id="homepage">Home</Link></li>
+                <li><Link to="/" id="homepage">Home</Link></li>
                 <li>Checkout Page</li>
             </ul>
         </div>

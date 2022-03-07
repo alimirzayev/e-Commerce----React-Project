@@ -1,6 +1,7 @@
 import React from 'react'
 import '../components/Blog/Blog.css'
 import { Link } from 'react-router-dom'
+import Blog from '../components/Blog/Blog'
 function Blogpage() {
     return (
         <div className="blogPage">
@@ -11,6 +12,8 @@ function Blogpage() {
                     <li>Blog Page</li>
                 </ul>
             </div>
+
+            <Blog />
 
         </div>
     )

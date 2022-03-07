@@ -35,6 +35,7 @@ hr {
 }
 
 .main {
+  position: relative;
   max-width: 1920px;
   width: 100%;
   height: 100%;
@@ -183,7 +184,7 @@ hr {
 
 .mainRightCard1 {
   width: 269px;
-  height: 323px;
+  height: fit-content !important;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
   border-radius: 12px;

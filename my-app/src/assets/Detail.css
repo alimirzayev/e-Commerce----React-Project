@@ -1,5 +1,6 @@
 .detail {
-  transform: translateY(-35px);
+  position: relative;
+  z-index: 1;
 }
 
 .detailMain {
@@ -301,6 +302,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
@@ -397,7 +399,7 @@
 }
 
 @media screen and (min-width: 370px) and (max-width: 414px) {
-  .detailReview p {
+  .d etailReview p {
     margin-top: -7px;
   }
 
@@ -415,6 +417,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
@@ -511,7 +514,7 @@
 }
 
 @media screen and (min-width: 414px) and (max-width: 767px) {
-  .detailReview p {
+  .d etailReview p {
     margin-top: -2px;
   }
 
@@ -529,6 +532,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
@@ -618,7 +622,7 @@
 }
 
 @media screen and (min-width: 767px) and (max-width: 1024px) {
-  .detailReview p {
+  .d etailReview p {
     margin-top: -2px;
   }
 
@@ -636,6 +640,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    order: 2;
   }
 
   .productImage {
