@@ -1,3 +1,21 @@
 .blogPage {
   min-height: 100vh;
+  position: relative;
+  z-index: 1;
+}
+
+.blog-container {
+  width: 100%;
+  padding: 0 45px !important;
+}
+
+.blog-container-first-section,
+.blog-container-second-section{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog-container-second-section{
+  margin: 96px 0;
 }
