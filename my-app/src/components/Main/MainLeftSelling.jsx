@@ -13,7 +13,7 @@ function MainLeftSelling() {
                     <li><Link to="">Kitchen</Link></li>
                     <li><Link to="">Special nutrition</Link></li>
                 </ul>
-                <button>More Categories <i className="fas fa-angle-right"></i></button>
+                <Link to="/category"><button>More Categories <i className="fas fa-angle-right"></i></button></Link>
             </div>
         </div>
     )

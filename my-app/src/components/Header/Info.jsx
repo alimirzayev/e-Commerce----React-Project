@@ -16,7 +16,7 @@ function Info() {
 
             <div className="topHeaderRight">
                 <ul>
-                    <li><Link to="">Blog</Link></li>
+                    <li><Link to="/blogpage">Blog</Link></li>
                     <li><Link to="">About Us</Link></li>
                     <li><Link to="">Careers</Link></li>
                 </ul>
