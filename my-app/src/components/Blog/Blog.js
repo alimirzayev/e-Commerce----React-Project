@@ -1,10 +1,13 @@
-import React from 'react'
+import React,{useEffect} from 'react'
 import BlogLeft from '../ReadBlog/BlogLeft'
 import './Blog.css';
 import BlogPageLeft from './BlogPageLeft';
 import BlogPageRight from './BlogPageRight';
 
 function Blog() {
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <div className='blog-container'>
 

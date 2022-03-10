@@ -1,10 +1,12 @@
 import React from 'react'
 import './BlogPageRight.css'
+import {Link} from 'react-router-dom'
 
 function BlogPageRight() {
   return (
     <div className='BlogPageRight'>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -28,7 +30,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -52,7 +56,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -76,7 +82,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -100,7 +108,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -124,7 +134,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -148,7 +160,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -172,7 +186,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -196,7 +212,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -220,7 +238,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -244,7 +264,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -268,7 +290,9 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
+      <Link to="/bloginner">
         <div className="blogCard">
 
           <div className="blogCardImg">
@@ -292,6 +316,7 @@ function BlogPageRight() {
           </div>
 
         </div>
+      </Link>
 
     </div>
   )
