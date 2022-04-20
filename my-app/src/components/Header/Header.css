@@ -87,7 +87,7 @@ hr {
   height: 42px;
   background-color: #f9f9f9;
   border: 1px solid #d1d1d1;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .mainHeaderRight {
@@ -112,7 +112,7 @@ hr {
   height: 16px;
   background-color: #e5704b;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
-  border-radius: 12px;
+  border-radius: 6px;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -161,7 +161,7 @@ hr {
   background: #6a983c;
   color: white;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   font-family: "Bold";
   cursor: pointer;
 }
@@ -344,11 +344,11 @@ nav ul {
   width: 500px;
   min-height: auto;
   position: absolute;
-  top: 18%;
-  border-radius: 12px !important;
+  top: 17.6%;
   z-index: 340;
-  background-color: #6a983c;
-  border-radius: 12px;
+  background-color: #f9f9f9;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 
   animation-name: appear;
   animation-duration: 0.4s;
@@ -362,7 +362,6 @@ nav ul {
   align-items: center;
   justify-content: space-around;
   z-index: 240;
-  border-bottom: 1px solid black;
 
   animation-name: appear;
   animation-duration: 0.4s;
@@ -372,6 +371,12 @@ nav ul {
 .itemSearch h3 {
   color: white;
   font-weight: bold;
+  color: black;
+}
+
+.itemSearchTitle{
+  color: black;
+  font-weight: 700;
 }
 
 .itemSearch button {
@@ -381,7 +386,7 @@ nav ul {
   outline: none;
   cursor: pointer;
   border: 3px solid #6a983c;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 0px 14px;
 }
 

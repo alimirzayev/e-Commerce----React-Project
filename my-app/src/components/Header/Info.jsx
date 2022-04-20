@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Info() {
@@ -15,7 +16,7 @@ function Info() {
 
             <div className="topHeaderRight">
                 <ul>
-                    <li><a>Blog</a></li>
+                    <li><Link to="/blogpage">Blog</Link></li>
                     <li><a>About Us</a></li>
                     <li><a>Careers</a></li>
                 </ul>

@@ -53,7 +53,7 @@ hr {
 
 .mainLeftCategory {
   width: 100%;
-  height: 33%;
+  height: 25%;
 }
 
 .mainLeftCategory h4,
@@ -78,7 +78,7 @@ hr {
 .mainLeftBest ul li a {
   color: #6a983c;
   margin-top: 10px;
-  text-decoration: underline;
+  text-decoration: none;
   font-family: "Regular";
 }
 
@@ -87,7 +87,7 @@ hr {
 .mainLeftBest button {
   margin-top: 40px;
   background: #f5f5f5;
-  border-radius: 12px;
+  border-radius: 6px;
   height: 48px;
   width: 178px;
   outline: none;
@@ -109,7 +109,7 @@ hr {
 .mainLeftBest {
   width: 100%;
   height: 33%;
-  padding-top: 17%;
+  padding-top: 4%;
 }
 
 .mainRight {
@@ -128,9 +128,9 @@ hr {
 .mainRightFirst,
 .mainRightSecond {
   background: #f4f8ec;
-  border-radius: 12px;
+  border-radius: 6px;
   min-height: 280px;
-  width: 420px;
+  width: 472px;
   background-image: url(../../assets/img/Group.png);
   background-position: center;
   padding: 50px;
@@ -158,7 +158,7 @@ hr {
   cursor: pointer;
   font-size: 1.05rem;
   border: 3px solid #6a983c;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 10px 20px;
 }
 
@@ -186,14 +186,14 @@ hr {
   height: 323px;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 16px;
   margin: 3%;
 }
 
 .mainRightCard1 img {
   width: 100%;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .cardContainer {
@@ -231,7 +231,7 @@ hr {
   outline: none;
   cursor: pointer;
   color: white;
-  border-radius: 12px;
+  border-radius: 6px;
   font-family: "Bold";
   background: #6a983c;
   border: 2px solid #46760a;

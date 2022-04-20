@@ -51,7 +51,7 @@
 .categories div span {
   color: #6a983c;
   background: #f4f8ec;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 0px 8px;
   font-family: "Bold";
 }
@@ -87,7 +87,7 @@
   background: #f9f9f9;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   display: block;
   text-align: center;
   font-family: "Bold";
@@ -108,7 +108,7 @@
   background: #6a983c;
   color: white;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   font-family: "Bold";
   cursor: pointer;
 }
@@ -155,7 +155,7 @@
 
 .categoryHeadingRight div span {
   background: #f4f8ec;
-  border-radius: 12px;
+  border-radius: 6px;
   width: 30px;
   height: 20px;
   text-align: center;
@@ -175,9 +175,9 @@
   padding: 0px 18px;
   height: 42px;
   background: #f9f9f9;
-  border: 1px solid #d1d1d1;
+  border: none;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
@@ -204,9 +204,9 @@
   width: 150px;
   height: 42px;
   background: #f9f9f9;
-  border: 1px solid #d1d1d1;
+  border: none;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -251,7 +251,7 @@
   cursor: pointer;
   color: #6a983c;
   background: #f4f8ec;
-  border-radius: 12px;
+  border-radius: 6px;
   padding: 2px 14px;
 }
 .slidecontainer {
@@ -270,7 +270,7 @@
   -webkit-transition: 0.2s; /* 0.2 seconds transition on hover */
   transition: opacity 0.2s;
   background: #ebebeb;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .slider:hover {
@@ -284,7 +284,7 @@
   height: 20px;
   background: #6a983c;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 .slider::-moz-range-thumb {
@@ -292,7 +292,7 @@
   height: 20px;
   background: #6a983c;
   cursor: pointer;
-  border-radius: 12px;
+  border-radius: 6px;
 }
 
 #card {
@@ -312,8 +312,9 @@
   height: 280px;
   border: 1px solid #d1d1d1;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   margin-bottom: 32px;
+  overflow: hidden;
 
   display: flex;
   align-items: center;
@@ -321,7 +322,7 @@
 }
 
 .list-cart-left {
-  width: 268px;
+  width: 282px;
   cursor: pointer;
 }
 
@@ -339,6 +340,7 @@
   flex-direction: column;
   justify-content: space-between;
   height: 84%;
+  transform: translateX(-35%);
 }
 
 .list-card-middle-inner-top div:nth-child(2) {
@@ -398,7 +400,7 @@
   background: #6a983c;
   border: 2px solid #46760a;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   outline: none;
   padding: 0px 8px;
   cursor: pointer;
@@ -413,7 +415,7 @@
   font-family: "Bold";
   background: #f5f5f5;
   box-sizing: border-box;
-  border-radius: 12px;
+  border-radius: 6px;
   outline: none;
   border: none;
   margin-top: 12px;

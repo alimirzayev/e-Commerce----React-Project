@@ -41,9 +41,8 @@ function Search(props) {
                     return (
                         <div className="itemSearch" key={key}>
                             <img src={val.img} alt="" />
-                            <h3 className="">{val.title}</h3>
-                            <h3 className="">{val.price}$</h3>
-                            <button id="buynow" className="">Buy Now</button>
+                            <p className="itemSearchTitle">{val.title}</p>
+                            <h3 className="itemSearchPrice">{val.price}$</h3>
                         </div>
 
                     )

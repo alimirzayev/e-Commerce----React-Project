@@ -10,7 +10,7 @@ function Home() {
         <div>
             <Main />
             <Testimonial />
-            <hr />
+            <hr style={{marginTop: '66px'}} />
             <Sec />
             <ReadBlog />
         </div>
