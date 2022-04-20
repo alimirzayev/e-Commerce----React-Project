@@ -17,7 +17,7 @@ function Price(props) {
         <div className="price">
             <h2>Price</h2>
 
-            <div class="slidecontainer">
+            <div className="slidecontainer">
                 <Slider
                     getAriaLabel={() => 'Temperature range'}
                     value={value}
@@ -37,11 +37,6 @@ function Price(props) {
                     <input disabled type="number" value={value[1]} />
                 </label>
             </div>
-
-            {/* <div className="btn-group">
-                <button>Apply</button>
-                <a href="">Reset</a>
-            </div> */}
 
         </div>
     )

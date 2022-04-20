@@ -5,12 +5,12 @@ import './Header.css';
 function Info() {
     return (
         <div className="topHeader">
-            
+
             <div className="topHeaderLeft">
                 <ul>
-                    <li><a>Chat with us</a></li>
-                    <li><a>+420 336 775 664</a></li>
-                    <li><a>info@freshnesecom.com</a></li>
+                    <li><Link to="">Chat with us</Link></li>
+                    <li><Link to="">+420 336 775 664</Link></li>
+                    <li><Link to="">info@freshnesecom.com</Link></li>
                 </ul>
             </div>
 

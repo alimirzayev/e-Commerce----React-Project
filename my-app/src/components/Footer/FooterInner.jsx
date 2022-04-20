@@ -1,22 +1,23 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 
 function FooterInner() {
     return (
-        <div class="footer1">
+        <div className="footer1">
             <ul>
                 <h5>Get in touch</h5>
-                <a href="">
+                <Link to="">
                     <li>About Us</li>
-                </a>
-                <a href="">
+                </Link>
+                <Link to="">
                     <li>Careers</li>
-                </a>
-                <a href="">
+                </Link>
+                <Link to="">
                     <li>Press Releases</li>
-                </a>
-                <a href="">
+                </Link>
+                <Link to="">
                     <li>Blog</li>
-                </a>
+                </Link>
             </ul>
         </div>
     )

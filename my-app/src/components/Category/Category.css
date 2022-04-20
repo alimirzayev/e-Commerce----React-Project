@@ -1,4 +1,5 @@
 .categoryPage {
+  position: relative;
   min-height: 140vh;
   margin: 36px 50px;
 }

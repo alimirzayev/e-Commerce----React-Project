@@ -1,124 +1,138 @@
-import React from 'react'
+import React, { useRef, useEffect } from 'react'
 import './Header.css';
+import { Link } from 'react-router-dom'
+import { connect } from 'react-redux'
 
-function Category() {
+function Category(props) {
+    const parent = useRef();
+
+    useEffect(() => {
+        if (props.blur) {
+            parent.current.style.zIndex = "-50";
+        } else {
+            parent.current.style.zIndex = "51";
+        }
+
+    }, [props.blur])
+
     return (
-        <nav className="navbar">
+        <nav ref={parent} className="navbar">
             <ul>
-                <li className="dropdown"><a href="">Bakery
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Bread</a></li>
-                                <li><a href="">Cake</a></li>
-                                <li><a href="">Biscuits</a></li>
-                                <li><a href="">Bagets</a></li>
-                                <li><a href="">Muffins</a></li>
-                            </ul>
-                        </div>
+                <li className="dropdown">
+                    Bakery
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li>Bread</li>
+                            <li>Cake</li>
+                            <li>Biscuits</li>
+                            <li>Bagets</li>
+                            <li>Muffins</li>
+                        </ul>
+                    </div>
 
-                    </a></li>
+                </li>
 
-                <li className="dropdown"><a href="">Fruit and Vegetables
+                <li className="dropdown">
+                    Fruit and Vegetables
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li>Apple</li>
+                            <li>Banana</li>
+                            <li>Cheery</li>
+                            <li>Lemon</li>
+                            <li>Vegetables</li>
+                        </ul>
+                    </div>
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Apple</a></li>
-                                <li><a href="">Banana</a></li>
-                                <li><a href="">Cheery</a></li>
-                                <li><a href="">Lemon</a></li>
-                                <li><a href="">Vegetables</a></li>
-                            </ul>
-                        </div>
+                </li>
 
-                    </a></li>
+                <li className="dropdown">Meat and fish
 
-                <li className="dropdown"><a href="">Meat and fish
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li>Beef</li>
+                            <li>Goat</li>
+                            <li>Lamb</li>
+                            <li>Pork</li>
+                            <li>Fishs</li>
+                        </ul>
+                    </div>
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Beef</a></li>
-                                <li><a href="">Goat</a></li>
-                                <li><a href="">Lamb</a></li>
-                                <li><a href="">Pork</a></li>
-                                <li><a href="">Fishs</a></li>
-                            </ul>
-                        </div>
+                </li>
 
-                    </a></li>
+                <li className="dropdown">Drinks
 
-                <li className="dropdown"><a href="">Drinks
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li>Water</li>
+                            <li>Milk</li>
+                            <li>Juice</li>
+                            <li>Beer</li>
+                            <li>Wine</li>
+                            <li>Soft Drinks</li>
+                            <li>Juice Drinks</li>
+                        </ul>
+                    </div>
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Water</a></li>
-                                <li><a href="">Milk</a></li>
-                                <li><a href="">Juice</a></li>
-                                <li><a href="">Beer</a></li>
-                                <li><a href="">Wine</a></li>
-                                <li><a href="">Soft Drinks</a></li>
-                                <li><a href="">Juice Drinks</a></li>
-                            </ul>
-                        </div>
+                </li>
 
-                    </a></li>
+                <li className="dropdown">Kitchen
 
-                <li className="dropdown"><a href="">Kitchen
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li>Pizza</li>
+                            <li>Hamburger</li>
+                            <li>Pancake</li>
+                            <li>Sauces</li>
+                        </ul>
+                    </div>
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Pizza</a></li>
-                                <li><a href="">Hamburger</a></li>
-                                <li><a href="">Pancake</a></li>
-                                <li><a href="">Sauces</a></li>
-                            </ul>
-                        </div>
+                </li>
 
-                    </a></li>
+                <li className="dropdown">Special nutrition
 
-                <li className="dropdown"><a href="">Special nutrition
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li>Dark Green Vegetables</li>
+                            <li>Berries</li>
+                            <li>Seaweed</li>
+                            <li>Salmon</li>
+                            <li>Potatoes</li>
+                        </ul>
+                    </div>
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Dark Green Vegetables</a></li>
-                                <li><a href="">Berries</a></li>
-                                <li><a href="">Seaweed</a></li>
-                                <li><a href="">Salmon</a></li>
-                                <li><a href="">Potatoes</a></li>
-                            </ul>
-                        </div>
+                </li>
 
-                    </a></li>
+                <li className="dropdown">Baby
 
-                <li className="dropdown"><a href="">Baby
+                    <div className="dropdown-content">
+                        <ul className="dropdown-ul">
+                            <li>Beech-Nut</li>
+                            <li>Cerebelly</li>
+                            <li>Nutella</li>
+                            <li>Baby Gourmet</li>
+                            <li>Sprout</li>
+                        </ul>
+                    </div>
 
-                        <div className="dropdown-content">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Beech-Nut</a></li>
-                                <li><a href="">Cerebelly</a></li>
-                                <li><a href="">Nutella</a></li>
-                                <li><a href="">Baby Gourmet</a></li>
-                                <li><a href="">Sprout</a></li>
-                            </ul>
-                        </div>
+                </li>
 
-                    </a></li>
-
-                <li className="dropdown"><a href="">Pharmacy
-
-                        <div className="dropdown-content end">
-                            <ul className="dropdown-ul">
-                                <li><a href="">Beech-Nut</a></li>
-                                <li><a href="">Cerebelly</a></li>
-                                <li><a href="">Nutella</a></li>
-                                <li><a href="">Baby Gourmet</a></li>
-                                <li><a href="">Sprout</a></li>
-                            </ul>
-                        </div>
-
-                    </a></li>
+                <li className="dropdown">
+                    Pharmacy
+                    <div className="dropdown-content end">
+                        <ul className="dropdown-ul">
+                            <li>Beech-Nut</li>
+                            <li>Cerebelly</li>
+                            <li>Nutella</li>
+                            <li>Baby Gourmet</li>
+                            <li>Sprout</li>
+                        </ul>
+                    </div>
+                </li>
             </ul>
-        </nav>
+        </nav >
     )
 }
 
-export default Category
+let mapStateToProps = state => state
+export default connect(mapStateToProps)(Category)

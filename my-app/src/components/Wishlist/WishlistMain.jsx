@@ -13,7 +13,6 @@ function WishlistMain(props) {
         let cartCopy = [...cart]
 
         cartCopy = cartCopy.filter(salam => salam.id != item.id);
-        console.log(item.id);
 
         setCart(cartCopy);
 
@@ -49,7 +48,7 @@ function WishlistMain(props) {
                             </div>
                             <div className='wishlistBtn'>
                                 <button onClick={() => removeItem(item)}>
-                                    <i class="fas fa-trash"></i>
+                                    <i className="fas fa-trash"></i>
                                     Remove
                                 </button>
                             </div>

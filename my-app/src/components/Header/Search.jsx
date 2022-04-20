@@ -2,7 +2,6 @@ import React from 'react'
 import { useState } from 'react';
 import { connect } from 'react-redux';
 import './Header.css';
-import JSONDATA from '../Main/Search.json'
 
 function Search(props) {
 

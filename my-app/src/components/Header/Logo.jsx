@@ -1,18 +1,18 @@
 import React, { useEffect, useRef } from 'react'
 import { Link } from 'react-router-dom';
 import './Header.css';
-
+import { Link } from 'react-router-dom'
 import { gsap } from "gsap";
+import { connect } from 'react-redux'
 
-
-function Logo() {
+function Logo(props) {
     let center = useRef();
     let hamburger = useRef();
     let before = useRef();
     let origin = useRef();
     let after = useRef();
 
-    let toggle = true;
+    const [toggle, setToggle] = useState(true);
 
     const openMenu = () => {
         if (toggle) {
@@ -21,17 +21,19 @@ function Logo() {
             gsap.to(after.current, 0.1, { rotation: -135, y: -8 })
             gsap.to(origin.current, 0.1, { scale: 0 })
 
-
             document.body.style.overflow = "hidden"
-            toggle = false
+            setToggle(false)
+            props.dispatch({ type: "OPENMENU", value: toggle })
         } else {
             gsap.to(hamburger.current, 0.3, { display: 'block', x: "-100%" });
             gsap.to(before.current, 0.1, { rotation: 0, y: 0 });
             gsap.to(after.current, 0.1, { rotation: 0, y: 0 })
             gsap.to(origin.current, 0.1, { scale: 1 })
 
-            toggle = true
-            document.body.style.overflow = "unset"
+
+            document.body.style.overflow = "unset";
+            setToggle(true)
+            props.dispatch({ type: "OPENMENU", value: toggle })
         }
     }
 
@@ -48,16 +50,16 @@ function Logo() {
 
             <div ref={hamburger} id="hamburger">
                 <ul>
-                    <li><a href="">Bakery</a></li>
-                    <li><a href="">Fruit and vegetables</a></li>
-                    <li><a href="">Meat and fish</a></li>
-                    <li><a href="">Drinks</a></li>
-                    <li><a href="">Kitchen</a></li>
-                    <li><a href="">Special nutrition</a></li>
-                    <li><a href="">Baby</a></li>
-                    <li><a href="">Pharmacy</a></li>
+                    <li><Link to="/category">Bakery</Link></li>
+                    <li><Link to="/category">Fruit and vegetables</Link></li>
+                    <li><Link to="/category">Meat and fish</Link></li>
+                    <li><Link to="/category">Drinks</Link></li>
+                    <li><Link to="/category">Kitchen</Link></li>
+                    <li><Link to="/category">Special nutrition</Link></li>
+                    <li><Link to="/category">Baby</Link></li>
+                    <li><Link to="/category">Pharmacy</Link></li>
                 </ul>
-                <hr classNameName="hrReact" />
+                <hr className="hrReact" />
             </div>
 
             <Link to="/">
@@ -104,4 +106,5 @@ function Logo() {
     )
 }
 
-export default Logo
+let mapStateToProps = state => state
+export default connect(mapStateToProps)(Logo)
